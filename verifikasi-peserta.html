@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Verifikasi Peserta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="Version" content="v4.4.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon"
+        href="https://ppid.kemdikbud.go.id/senayan/uploads/logo_kemdikbud_ori7575_77601df063.png" />
+
+    <!-- Css -->
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" class="theme-opt" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+    <!-- Style Css-->
+    <link href="assets/css/style.min.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <main>
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container-fluid px-5 ">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="assets/images/wkmb-logo.png" height="48" class="logo-light-mode" alt="">
+                    <img src="assets/images/wkmb-logo.png" height="48" class="logo-dark-mode" alt="">
+                </a>
+                <!-- Logo End -->
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!-- Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item ps-1 mb-0">
+
+                        <button class="btn btn-primary rounded-5">Masuk</button>
+
+                    </li>
+                    </li>
+                </ul>
+                <!--Login button End -->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Beranda</a></li>
+                        <li><a href="/" class="sub-menu-item">Pusat Pengetahuan</a></li>
+                        <li><a href="/" class="sub-menu-item">Mitra</a></li>
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Pusat Pembelajaran</a>
+                            <span class="menu-arrow text-white"></span>
+                            <ul class="submenu">
+                                <li><a href="">Rancangan Pelatihan</a></li>
+                                <li><a href="verifikasi-pelatihan.html">Verifikasi Rancangan Pelatihan</a></li>
+                                <li><a href="kelola-pelatihan.html">Kelola Pelatihan</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/" class="sub-menu-item">Registrasi</a>
+
+                        </li>
+                        <li><a href="/" class="sub-menu-item">Bantuan</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+
+
+        <!-- Hero Start -->
+        <section class="bg-half-170 d-table w-100 hero">
+            <img src="assets/images/element-light.png" class="position-absolute left-0 top-0 z-index-0" alt=""
+                draggable="false">
+            <img src="assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+            <div class="container z-index-1">
+                <nav aria-label="breadcrumb" class="d-inline-block">
+                    <ul class="breadcrumb m-0 p-0 bg-transparent ">
+                        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Verifikasi Peserta</li>
+                    </ul>
+                </nav>
+
+                <h4 class="text-white fw-bold mt-3">Verifikasi Peserta</h4>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+
+        <!-- start tabel -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="component-wrapper rounded shadow">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-between border-bottom">
+                                        <div class="p-4">
+                                            <h5 class="title mb-0"> Verifikasi Peserta </h5>
+                                        </div>
+                                        <div class="p-4">
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-icon btn-pills btn-primary mb-2 mb-md-0"
+                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                title="Verifikasi Peserta"><i class="uil uil-user-check"
+                                                    style="font-size: 21px;"></i></a>
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-icon btn-pills btn-info mb-2 mb-md-0"
+                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                title="Detail Pelatihan"><i class="uil uil-file-info-alt"
+                                                    style="font-size: 21px;"></i></a>
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-icon btn-pills btn-success mb-2 mb-md-0"
+                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                title="Edit Pelatihan"><i class="uil uil-edit-alt"
+                                                    style="font-size: 21px;"></i></a>
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-icon btn-pills btn-danger mb-2 mb-md-0"
+                                                data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hapus"><i
+                                                    class="uil uil-file-times" style="font-size: 21px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-4">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="row">
+                                                <div class="col-12 mt-4 pt-2">
+                                                    <div class="d-flex features feature-primary gap-3 align-items-center">
+                                                        <div
+                                                            class="icon text-center rounded-circle text-primary">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                                width="24" height="24">
+                                                                <title>book-information-variant</title>
+                                                                <path
+                                                                    d="M18 2H12V9L9.5 7.5L7 9V2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V4C20 2.89 19.1 2 18 2M17.68 18.41C17.57 18.5 16.47 19.25 16.05 19.5C15.63 19.79 14 20.72 14.26 18.92C14.89 15.28 16.11 13.12 14.65 14.06C14.27 14.29 14.05 14.43 13.91 14.5C13.78 14.61 13.79 14.6 13.68 14.41S13.53 14.23 13.67 14.13C13.67 14.13 15.9 12.34 16.72 12.28C17.5 12.21 17.31 13.17 17.24 13.61C16.78 15.46 15.94 18.15 16.07 18.54C16.18 18.93 17 18.31 17.44 18C17.44 18 17.5 17.93 17.61 18.05C17.72 18.22 17.83 18.3 17.68 18.41M16.97 11.06C16.4 11.06 15.94 10.6 15.94 10.03C15.94 9.46 16.4 9 16.97 9C17.54 9 18 9.46 18 10.03C18 10.6 17.54 11.06 16.97 11.06Z" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                            <h6 class="title-h6">Judul Pelatihan</h6>
+                                                            <p class="text-muted para mb-0 fs-14">Pelatihan Manajemen
+                                                                Informasi
+                                                                Akuntabilitas Sesi I</p>
+                                                        </div>
+                                                    </div>
+                                                </div><!--end col-->
+
+                                                <div class="col-12 mt-4 pt-2">
+                                                    <div class="d-flex features feature-primary gap-3 align-items-center">
+                                                        <div
+                                                            class="icon text-center rounded-circle text-primary">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                                width="24" height="24">
+                                                                <title>account-star-outline</title>
+                                                                <path
+                                                                    d="M15,4A4,4 0 0,1 19,8A4,4 0 0,1 15,12A4,4 0 0,1 11,8A4,4 0 0,1 15,4M15,5.9A2.1,2.1 0 0,0 12.9,8A2.1,2.1 0 0,0 15,10.1C16.16,10.1 17.1,9.16 17.1,8C17.1,6.84 16.16,5.9 15,5.9M15,13C17.67,13 23,14.33 23,17V20H7V17C7,14.33 12.33,13 15,13M15,14.9C12,14.9 8.9,16.36 8.9,17V18.1H21.1V17C21.1,16.36 17.97,14.9 15,14.9M5,13.28L2.5,14.77L3.18,11.96L1,10.08L3.87,9.83L5,7.19L6.11,9.83L9,10.08L6.8,11.96L7.45,14.77L5,13.28Z" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                            <h6 class="title-h6">Pelatih</h6>
+                                                            <p class="text-muted para mb-0 fs-14">Pusdiklat Pegawai
+                                                                Kemendikbudristek (Satker)</p>
+                                                        </div>
+                                                    </div>
+                                                </div><!--end col-->
+
+                                                <div class="col-12 mt-4 pt-2">
+                                                    <div class="d-flex features feature-primary gap-3 align-items-center">
+                                                        <div
+                                                            class="icon text-center rounded-circle text-primary">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                                width="24" height="24">
+                                                                <title>book-lock-outline</title>
+                                                                <path
+                                                                    d="M13 20.7C13 21.16 13.1 21.6 13.27 22H6C4.89 22 4 21.11 4 20V4C4 2.9 4.89 2 6 2H18C19.11 2 20 2.9 20 4V10.11C19.68 10.04 19.34 10 19 10S18.32 10.04 18 10.11V4H13V12L10.5 9.75L8 12V4H6V20H13V20.7M23 17.3V20.8C23 21.4 22.4 22 21.7 22H16.2C15.6 22 15 21.4 15 20.7V17.2C15 16.6 15.6 16 16.2 16V14.5C16.2 13.1 17.6 12 19 12S21.8 13.1 21.8 14.5V16C22.4 16 23 16.6 23 17.3M20.5 14.5C20.5 13.7 19.8 13.2 19 13.2S17.5 13.7 17.5 14.5V16H20.5V14.5Z" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                            <h6 class="title-h6">Tipe Pelatihan</h6>
+                                                            <p class="text-muted para mb-0 fs-14">Urusan Sumber Daya
+                                                                Manusia
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div><!--end col-->
+                                            </div><!--end row-->
+                                        </div><!--end col-->
+
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="row">
+                                                <div class="col-12 mt-4 pt-2">
+                                                    <div class="d-flex features feature-primary gap-3 align-items-center">
+                                                        <div
+                                                            class="icon text-center rounded-circle text-primary">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                                width="24" height="24">
+                                                                <title>map-marker-radius-outline</title>
+                                                                <path
+                                                                    d="M12 4C14.2 4 16 5.8 16 8C16 10.1 13.9 13.5 12 15.9C10.1 13.4 8 10.1 8 8C8 5.8 9.8 4 12 4M12 2C8.7 2 6 4.7 6 8C6 12.5 12 19 12 19S18 12.4 18 8C18 4.7 15.3 2 12 2M12 6C10.9 6 10 6.9 10 8S10.9 10 12 10 14 9.1 14 8 13.1 6 12 6M20 19C20 21.2 16.4 23 12 23S4 21.2 4 19C4 17.7 5.2 16.6 7.1 15.8L7.7 16.7C6.7 17.2 6 17.8 6 18.5C6 19.9 8.7 21 12 21S18 19.9 18 18.5C18 17.8 17.3 17.2 16.2 16.7L16.8 15.8C18.8 16.6 20 17.7 20 19Z" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                            <h6 class="title-h6">Tempat Kegiatan</h6>
+                                                            <p class="text-muted para mb-0 fs-14">Kota Depok, Jawa Barat
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div><!--end col-->
+
+                                                <div class="col-12 mt-4 pt-2">
+                                                    <div class="d-flex features feature-primary gap-3 align-items-center">
+                                                        <div
+                                                            class="icon text-center rounded-circle text-primary">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                                width="24" height="24">
+                                                                <title>calendar-clock</title>
+                                                                <path
+                                                                    d="M15,13H16.5V15.82L18.94,17.23L18.19,18.53L15,16.69V13M19,8H5V19H9.67C9.24,18.09 9,17.07 9,16A7,7 0 0,1 16,9C17.07,9 18.09,9.24 19,9.67V8M5,21C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H6V1H8V3H16V1H18V3H19A2,2 0 0,1 21,5V11.1C22.24,12.36 23,14.09 23,16A7,7 0 0,1 16,23C14.09,23 12.36,22.24 11.1,21H5M16,11.15A4.85,4.85 0 0,0 11.15,16C11.15,18.68 13.32,20.85 16,20.85A4.85,4.85 0 0,0 20.85,16C20.85,13.32 18.68,11.15 16,11.15Z" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                            <h6 class="title-h6">Waktu Pendaftaran</h6>
+                                                            <p class="text-muted para mb-0 fs-14">2023-03-20 s/d
+                                                                2023-03-25
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div><!--end col-->
+
+                                                <div class="col-12 mt-4 pt-2">
+                                                    <div class="d-flex features feature-primary gap-3 align-items-center">
+                                                        <div
+                                                            class="icon text-center rounded-circle text-primary">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                                width="24" height="24">
+                                                                <title>book-clock</title>
+                                                                <path
+                                                                    d="M16.5 17.25L19.36 18.94L18.61 20.16L15 18V13H16.5V17.25M23 17C23 20.87 19.87 24 16 24C14.09 24 12.37 23.24 11.11 22H6C4.89 22 4 21.11 4 20V4C4 2.9 4.89 2 6 2H7V9L9.5 7.5L12 9V2H18C19.1 2 20 2.89 20 4V11.26C21.81 12.53 23 14.62 23 17M21 17C21 14.24 18.76 12 16 12S11 14.24 11 17 13.24 22 16 22 21 19.76 21 17Z" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="flex-1">
+                                                            <h4 class="title-h6">Waktu Kegiatan</h4>
+                                                            <p class="text-muted para mb-0 fs-14">2023-03-28 s/d
+                                                                2023-04-18
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div><!--end col-->
+                                            </div><!--end row-->
+                                        </div><!--end col-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="component-wrapper mt-5">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded gap-2"
+                                        id="pills-tab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link rounded border-cstm active" id="verif-peserta-tab"
+                                                data-bs-toggle="pill" href="#verif-peserta" role="tab"
+                                                aria-controls="verif-peserta" aria-selected="false">
+                                                <div class="text-center py-2">
+                                                    <h6 class="mb-0 fs-14">Verifikasi Peserta</h6>
+                                                </div>
+                                            </a><!--end nav link-->
+                                        </li><!--end nav item-->
+
+                                        <li class="nav-item">
+                                            <a class="nav-link rounded border-cstm" id="dok-pelatihan-tab"
+                                                data-bs-toggle="pill" href="#dok-pelatihan" role="tab"
+                                                aria-controls="dok-pelatihan" aria-selected="false">
+                                                <div class="text-center py-2">
+                                                    <h6 class="mb-0 fs-14">Dokumentasi Pelatihan</h6>
+                                                </div>
+                                            </a><!--end nav link-->
+                                        </li><!--end nav item-->
+
+                                        <li class="nav-item">
+                                            <a class="nav-link rounded border-cstm" id="unggah-laporan-tab"
+                                                data-bs-toggle="pill" href="#unggah-laporan" role="tab"
+                                                aria-controls="unggah-laporan" aria-selected="false">
+                                                <div class="text-center py-2">
+                                                    <h6 class="mb-0 fs-14">Unggah Laporan</h6>
+                                                </div>
+                                            </a><!--end nav link-->
+                                        </li><!--end nav item-->
+
+                                        <li class="nav-item">
+                                            <a class="nav-link rounded border-cstm" id="materi-pelatihan-tab"
+                                                data-bs-toggle="pill" href="#materi-pelatihan" role="tab"
+                                                aria-controls="materi-pelatihan" aria-selected="false">
+                                                <div class="text-center py-2">
+                                                    <h6 class="mb-0 fs-14">Materi Pelatihan</h6>
+                                                </div>
+                                            </a><!--end nav link-->
+                                        </li><!--end nav item-->
+
+                                        <li class="nav-item">
+                                            <a class="nav-link rounded border-cstm" id="sertifikat-tab"
+                                                data-bs-toggle="pill" href="#sertifikat" role="tab"
+                                                aria-controls="sertifikat" aria-selected="false">
+                                                <div class="text-center py-2">
+                                                    <h6 class="mb-0 fs-14">Sertifikat</h6>
+                                                </div>
+                                            </a><!--end nav link-->
+                                        </li><!--end nav item-->
+                                    </ul><!--end nav pills-->
+                                </div><!--end col-->
+                            </div><!--end row-->
+
+                            <div class="row pt-3">
+                                <div class="col-12">
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="verif-peserta" role="tabpanel"
+                                            aria-labelledby="verif-peserta-tab">
+                                            <div class="row bg-white shadow rounded">
+                                                <div class="col-12">
+                                                    <div class="d-flex justify-content-between border-bottom">
+                                                        <div class="p-4">
+                                                            <h5 class="title mb-0"> Data Peserta </h5>
+                                                        </div>
+                                                        <div class="p-4">
+                                                            <a href="javascript:void(0);"
+                                                                class="btn btn-icon btn-pills btn-primary mb-2 mb-md-0"
+                                                                data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                title="Export CSV"><i class="mdi mdi-file-excel"
+                                                                    style="font-size: 21px;"></i></a>
+
+                                                            <button class="btn btn-icon btn-pills btn-primary"
+                                                                type="button" data-bs-toggle2="tooltip"
+                                                                data-bs-placement="bottom" data-bs-toggle="collapse"
+                                                                title="Pencarian" data-bs-target="#collapseExample"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapseExample">
+                                                                <i class="fea icon-sm icons text-white" data-feather="search" 
+                                                                style="opacity: 100%; stroke-width: 2px;"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="collapse" id="collapseExample">
+                                                        <div class="card card-body">
+                                                            <form>
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Nama Peserta</label>
+                                                                            <div class="form-icon position-relative">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                                                    fill="currentColor"
+                                                                                    class="bi bi-person-rolodex fea icon-sm icons"
+                                                                                    viewBox="0 0 16 16">
+                                                                                    <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                                                                                    <path
+                                                                                        d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1H1Zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1V2Z" />
+                                                                                </svg>
+                            
+                                                                                <input name="nama-peserta" id="nama-peserta" type="text" class="form-control ps-5"
+                                                                                    placeholder="Nama Peserta :">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!--end col-->
+                                                                    <div class="col-md-3">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Instansi</label>
+                                                                            <div class="form-icon position-relative">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                                                    fill="currentColor" viewBox="0 0 16 16"
+                                                                                    class="bi bi-bookmark-star fea icon-sm icons">
+                                                                                    <path
+                                                                                        d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.178.178 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.178.178 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.178.178 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.178.178 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.178.178 0 0 0 .134-.098L7.84 4.1z" />
+                                                                                    <path
+                                                                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                                                </svg>
+                            
+                                                                                <input name="instansi" id="instansi" type="text"
+                                                                                    class="form-control ps-5" placeholder="Instansi :">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!--end col-->
+                                                                    <div class="col-md-3">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Provinsi</label>
+                                                                            <div class="form-icon position-relative">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                                                    fill="currentColor" class="bi bi-pin-map-fill fea icon-sm icons"
+                                                                                    viewBox="0 0 16 16">
+                                                                                    <path fill-rule="evenodd"
+                                                                                        d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                                                                                    <path fill-rule="evenodd"
+                                                                                        d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                                                                                </svg>
+                            
+                                                                                <input name="provinsi" id="provinsi" class="form-control ps-5"
+                                                                                    placeholder="Provinsi :">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!--end col-->
+                                                                    <div class="col-md-3">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Kota/Kabupaten</label>
+                                                                            <div class="form-icon position-relative">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                                                    fill="currentColor" class="bi bi-geo-fill fea icon-sm icons"
+                                                                                    viewBox="0 0 16 16">
+                                                                                    <path fill-rule="evenodd"
+                                                                                        d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                                                                                </svg>
+                            
+                                                                                <input name="Kabupaten" id="Kabupaten" class="form-control ps-5"
+                                                                                    placeholder="Kota/Kabupaten :">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!--end col-->
+                                                                    <div class="col-md-3">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Tanggal Mendaftar</label>
+                                                                            <div class="form-icon position-relative">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                                                    fill="currentColor" class="bi bi-calendar3 fea icon-sm icons"
+                                                                                    viewBox="0 0 16 16">
+                                                                                    <path
+                                                                                        d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                                                                    <path
+                                                                                        d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                                                                </svg>
+                            
+                                                                                <input name="Tanggal Mendaftar" id="tanggal_mendaftar" type="date"
+                                                                                    class="form-control ps-5" placeholder="Tanggal Mendaftar :">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!--end col-->
+                                                                    <div class="col-md-3">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Status</label>
+                                                                            <div class="form-icon position-relative">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                                                    fill="currentColor"
+                                                                                    class="bi bi-info-circle-fill fea icon-sm icons"
+                                                                                    viewBox="0 0 16 16">
+                                                                                    <path
+                                                                                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+                                                                                </svg>
+                            
+                                                                                <input name="Status" id="status" type="text"
+                                                                                    class="form-control ps-5" placeholder="Status :">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!--end col-->
+                                                                    <div class="col-md-3">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Jenjang</label>
+                                                                            <div class="form-icon position-relative">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="bi bi-info-circle-fill fea icon-sm icons" fill="currentColor"><title>layers-search-outline</title>
+                                                                                    <path d="M19.31 18.9C19.75 18.21 20 17.38 20 16.5C20 14 18 12 15.5 12S11 14 11 16.5 13 21 15.5 21C16.37 21 17.19 20.75 17.88 20.32L21 23.39L22.39 22L19.31 18.9M15.5 19C14.12 19 13 17.88 13 16.5S14.12 14 15.5 14 18 15.12 18 16.5 16.88 19 15.5 19M9.59 19.2L3 14.07L4.62 12.81L9 16.22C9 16.32 9 16.41 9 16.5C9 17.46 9.22 18.38 9.59 19.2M9.5 14.04L3 9L12 2L21 9L18.66 10.82C17.96 10.44 17.19 10.18 16.37 10.07L17.74 9L12 4.53L6.26 9L10.53 12.32C10.1 12.84 9.74 13.42 9.5 14.04Z" />
+                                                                                </svg>
+                            
+                                                                                <input name="jenjang" id="jenjang" type="text"
+                                                                                    class="form-control ps-5" placeholder="Jenjang :">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!--end col-->
+                                                                    <div class="col-md-3">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Mata Pelajaran</label>
+                                                                            <div class="form-icon position-relative">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                                                                fill="currentColor"
+                                                                                class="bi bi-info-circle-fill fea icon-sm icons"><title>cast-education</title>
+                                                                                    <path d="M21,3H3A2,2 0 0,0 1,5V8H3V5H21V19H14V21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3M1,18V21H4A3,3 0 0,0 1,18M1,14V16A5,5 0 0,1 6,21H8A7,7 0 0,0 1,14M1,10V12A9,9 0 0,1 10,21H12C12,14.92 7.07,10 1,10M11,11.09V13.09L14.5,15L18,13.09V11.09L14.5,13L11,11.09M14.5,6L9,9L14.5,12L20,9L14.5,6Z" />
+                                                                                </svg>
+                            
+                                                                                <input name="mata-pelajaran" id="mata-pelajaran" type="text"
+                                                                                    class="form-control ps-5" placeholder="Mata Pelajaran :">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!--end col-->
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Email</label>
+                                                                            <div class="form-icon position-relative">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                                                                fill="currentColor"
+                                                                                class="bi bi-info-circle-fill fea icon-sm icons"><title>email-check</title>
+                                                                                    <path d="M13 19C13 15.69 15.69 13 19 13C20.1 13 21.12 13.3 22 13.81V6C22 4.89 21.1 4 20 4H4C2.89 4 2 4.89 2 6V18C2 19.11 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19M4 8V6L12 11L20 6V8L12 13L4 8M17.75 22.16L15 19.16L16.16 18L17.75 19.59L21.34 16L22.5 17.41L17.75 22.16" />
+                                                                                </svg>
+                            
+                                                                                <input name="email" id="email" type="text"
+                                                                                    class="form-control ps-5" placeholder="Email :">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!--end col-->
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label class="form-label">Handphone</label>
+                                                                            <div class="form-icon position-relative">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                                                                fill="currentColor"
+                                                                                class="bi bi-info-circle-fill fea icon-sm icons"><title>phone-dial</title>
+                                                                                    <path d="M6.6 10.8C8 13.6 10.4 15.9 13.2 17.4L15.4 15.2C15.7 14.9 16.1 14.8 16.4 15C17.5 15.4 18.7 15.6 20 15.6C20.6 15.6 21 16 21 16.6V20C21 20.6 20.6 21 20 21C10.6 21 3 13.4 3 4C3 3.4 3.5 3 4 3H7.5C8.1 3 8.5 3.4 8.5 4C8.5 5.2 8.7 6.4 9.1 7.6C9.2 7.9 9.1 8.3 8.9 8.6L6.6 10.8M14 3C13.4 3 13 3.4 13 4S13.4 5 14 5 15 4.6 15 4 14.6 3 14 3M17 3C16.4 3 16 3.4 16 4S16.4 5 17 5 18 4.6 18 4 17.6 3 17 3M20 3C19.4 3 19 3.4 19 4S19.4 5 20 5 21 4.6 21 4 20.6 3 20 3M14 6C13.4 6 13 6.4 13 7S13.4 8 14 8 15 7.6 15 7 14.6 6 14 6M17 6C16.4 6 16 6.4 16 7S16.4 8 17 8 18 7.6 18 7 17.6 6 17 6M20 6C19.4 6 19 6.4 19 7S19.4 8 20 8 21 7.6 21 7 20.6 6 20 6M14 9C13.4 9 13 9.4 13 10S13.4 11 14 11 15 10.6 15 10 14.6 9 14 9M17 9C16.4 9 16 9.4 16 10S16.4 11 17 11 18 10.6 18 10 17.6 9 17 9M20 9C19.4 9 19 9.4 19 10S19.4 11 20 11 21 10.6 21 10 20.6 9 20 9Z" />
+                                                                                </svg>
+                            
+                                                                                <input name="handphone" id="handphone" type="text"
+                                                                                    class="form-control ps-5" placeholder="Handphone :">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div><!--end col-->
+                                                                </div><!--end row-->
+                                                            </form><!--end form-->
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive mt-4">
+                                                        <table class="table mb-0 table-center">
+                                                            <thead class="bg-light">
+                                                                <tr>
+                                                                    <th class="border-bottom p-3">Nama Peserta</th>
+                                                                    <th class="border-bottom p-3 text-center">Tanggal Mendaftar</th>
+                                                                    <th class="border-bottom p-3 text-center">Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="p-3">
+                                                                        <div class="d-flex">
+                                                                            <img src="https://shreethemes.in/landrick/landing/assets/images/client/05.jpg" class="avatar avatar-large rounded-circle shadow d-block mx-auto" alt="">
+                                                                            <div class="flex-1 content ms-3">
+                                                                                <a href="javascript:void(0);"
+                                                                                    class="forum-title text-primary fw-bold">Herlina Astuti Bengkal, S.Pd.</a>
+                                                                                    <div class="table-responsive">
+                                                                                        <table class="table table-hover mb-0 table-center">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Instansi</td>
+                                                                                                    <td>: Universitas Negeri Gorontalo</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Provinsi</td>
+                                                                                                    <td>: Gorontalo</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Kota/Kabupaten</td>
+                                                                                                    <td>: Gorontalo</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Email</td>
+                                                                                                    <td>: 197909132005012003</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Handphone</td>
+                                                                                                    <td>: 82296419486</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Jenjang</td>
+                                                                                                    <td>: -</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Mata Pelajaran</td>
+                                                                                                    <td>: -</td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center small p-3 h6">2023-03-27 16:11:20</td>
+                                                                    <td class="text-center small p-3"><span class="badge rounded-pill bg-soft-success">Accepted</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="p-3">
+                                                                        <div class="d-flex">
+                                                                            <img src="https://shreethemes.in/landrick/landing/assets/images/client/05.jpg" class="avatar avatar-large rounded-circle shadow d-block mx-auto" alt="">
+                                                                            <div class="flex-1 content ms-3">
+                                                                                <a href="javascript:void(0);"
+                                                                                    class="forum-title text-primary fw-bold">Herlina Astuti Bengkal, S.Pd.</a>
+                                                                                    <div class="table-responsive">
+                                                                                        <table class="table table-hover mb-0 table-center">
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Instansi</td>
+                                                                                                    <td>: Universitas Negeri Gorontalo</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Provinsi</td>
+                                                                                                    <td>: Gorontalo</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Kota/Kabupaten</td>
+                                                                                                    <td>: Gorontalo</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Email</td>
+                                                                                                    <td>: 197909132005012003</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Handphone</td>
+                                                                                                    <td>: 82296419486</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Jenjang</td>
+                                                                                                    <td>: -</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="ps-0">Mata Pelajaran</td>
+                                                                                                    <td>: -</td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center small p-3 h6">2023-03-27 16:11:20</td>
+                                                                    <td class="text-center small p-3"><span class="badge rounded-pill bg-soft-success">Accepted</span></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--end teb pane-->
+
+                                        <div class="tab-pane fade" id="dok-pelatihan" role="tabpanel"
+                                            aria-labelledby="dok-pelatihan-tab">
+                                            <div class="row bg-white shadow rounded">
+                                                <div class="col-12">
+                                                    <div class="d-flex justify-content-between border-bottom">
+                                                        <div class="p-4">
+                                                            <h5 class="title mb-0"> Unggah Dokumentasi Pelatihan </h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!--end teb pane-->
+
+                                        <div class="tab-pane fade" id="unggah-laporan" role="tabpanel"
+                                            aria-labelledby="unggah-laporan-tab">
+                                            <p class="text-muted mb-0">Unggah laporan</p>
+                                        </div><!--end teb pane-->
+
+                                        <div class="tab-pane fade" id="materi-pelatihan" role="tabpanel"
+                                            aria-labelledby="materi-pelatihan-tab">
+                                            <p class="text-muted mb-0">Materi Pelatihan</p>
+                                        </div><!--end teb pane-->
+
+                                        <div class="tab-pane fade" id="sertifikat" role="tabpanel"
+                                            aria-labelledby="sertifikat-tab">
+                                            <p class="text-muted mb-0">Sertifikat</p>
+                                        </div><!--end teb pane-->
+                                    </div><!--end tab content-->
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img src="assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt=""> -->
+
+
+            <div class="position-sticky bottom-0 z-index-1 text-end px-5 h-25">
+                <a href="#" onclick="topFunction()" id="back-to-top" class="position-relative ms-auto back-to-top"><i
+                        data-feather="arrow-up" class="fea icon-sm icons align-middle "></i></a>
+            </div>
+        </section>
+        <!-- ends tabel -->
+    </main>
+
+
+    <!-- Footer Start -->
+    <footer class="footer bg-gray">
+
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-60">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                <a href="#" class="logo-footer w-100">
+                                    <img src="assets/images/logo-bottom.png" alt="">
+                                </a>
+                                <p class="text-white mt-5 fw-normal opacity-50">Jl. Jendral Sudirman, Senayan,
+                                    Jakarta-10270
+                                    <br>
+                                    Telp: (021) 57033030
+                                </p>
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kemendikbudristek</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Lembaga Administrasi Negara</h5>
+                                        <p class="fw-normal "><a href="" class="text-white opacity-50">www.lan.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Merdeka Belajar</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.merdekabelajar.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kementerian PAN dan RB</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.menpan.go.id</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                    </div>
+                </div><!--end row-->
+            </div>
+
+            <div class="py-4">
+                <hr>
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p>©
+                                <script>document.write(new Date().getFullYear())</script> Kemendikbudristek</a>
+                            </p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end mb-0">
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-youtube fs-4"></i>
+                                    <span>Wiyata Kinarya Merdeka Belajar</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-instagram fs-4"></i>
+                                    <span>wkmb.kemendikbudristek</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div><!--end col-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+    <!-- javascript -->
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/plugins.init.js"></script>
+    <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="assets/js/app.js"></script>
+    <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+</body>
+
+</html>

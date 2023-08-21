@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tambah Pelatihan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="Version" content="v4.4.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon"
+        href="https://ppid.kemdikbud.go.id/senayan/uploads/logo_kemdikbud_ori7575_77601df063.png" />
+
+    <!-- Css -->
+    <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" class="theme-opt" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+    <!-- Style Css-->
+    <link href="assets/css/style.min.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <main>
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container-fluid px-5 ">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="assets/images/wkmb-logo.png" height="48" class="logo-light-mode" alt="">
+                    <img src="assets/images/wkmb-logo.png" height="48" class="logo-dark-mode" alt="">
+                </a>
+                <!-- Logo End -->
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!-- Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item ps-1 mb-0">
+
+                        <button class="btn btn-primary rounded-5">Masuk</button>
+
+                    </li>
+                    </li>
+                </ul>
+                <!--Login button End -->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Beranda</a></li>
+                        <li><a href="/" class="sub-menu-item">Pusat Pengetahuan</a></li>
+                        <li><a href="/" class="sub-menu-item">Mitra</a></li>
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Pusat Pembelajaran</a>
+                            <span class="menu-arrow text-white"></span>
+                            <ul class="submenu">
+                                <li><a href="">Rancangan Pelatihan</a></li>
+                                <li><a href="verifikasi-pelatihan.html">Verifikasi Rancangan Pelatihan</a></li>
+                                <li><a href="kelola-pelatihan.html">Kelola Pelatihan</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/" class="sub-menu-item">Registrasi</a>
+
+                        </li>
+                        <li><a href="/" class="sub-menu-item">Bantuan</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+
+
+        <!-- Hero Start -->
+        <section class="bg-half-170 d-table w-100 hero">
+            <img src="assets/images/element-light.png" class="position-absolute left-0 top-0 z-index-0" alt=""
+                draggable="false">
+            <img src="assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+            <div class="container z-index-1">
+                <nav aria-label="breadcrumb" class="d-inline-block">
+                    <ul class="breadcrumb m-0 p-0 bg-transparent ">
+                        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Kelola Pelatihan</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tambah Pelatihan</li>
+                    </ul>
+                </nav>
+
+                <h4 class="text-white fw-bold mt-3">Tambah Pelatihan</h4>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+
+        <!-- start form -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="card border-b-primary">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="component-wrapper rounded shadow p-4">
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Rancangan Pelatihan <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="book" class="fea icon-sm icons"></i>
+                                                <input name="name" id="name" type="button" class="form-control ps-5"
+                                                    placeholder="First Name :" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <div class="dropdown-menu">
+                                                    <a href="javascript:void(0)" class="dropdown-item">Manajemen
+                                                        Informasi
+                                                        Kepegawaian</a>
+                                                    <a href="javascript:void(0)" class="dropdown-item">Manajemen
+                                                        Informasi
+                                                        Akuntabilitas</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Judul Pelatihan <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                <input name="judul" id="judul" type="text" class="form-control ps-5"
+                                                    placeholder="Judul Pelatihan :">
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Tipe Pelatihan <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="grid" class="fea icon-sm icons"></i>
+                                                <input name="name" id="name" type="button" class="form-control ps-5"
+                                                    placeholder="First Name :" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <div class="dropdown-menu">
+                                                    <a href="javascript:void(0)" class="dropdown-item">Urusan
+                                                        Perencanaan</a>
+                                                    <a href="javascript:void(0)" class="dropdown-item">Urusan Hukum</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Penyelenggara <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="user" class="fea icon-sm icons"></i>
+                                                <input name="name" id="name" type="button" class="form-control ps-5"
+                                                    placeholder="First Name :" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <div class="dropdown-menu">
+                                                    <a href="javascript:void(0)" class="dropdown-item">Pusdatin
+                                                        Kemendikbudristek</a>
+                                                    <a href="javascript:void(0)" class="dropdown-item">Biro SDM
+                                                        Kemendikbudristek</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">PIC <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="user" class="fea icon-sm icons"></i>
+                                                <input name="name" id="name" type="button" class="form-control ps-5"
+                                                    placeholder="First Name :" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <div class="dropdown-menu">
+                                                    <a href="javascript:void(0)" class="dropdown-item">Pusdiklat Pegawai
+                                                        Satker</a>
+                                                    <a href="javascript:void(0)" class="dropdown-item">Puspeka</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Tanggal Pendaftaran </label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="book" class="fea icon-sm icons"></i>
+                                                <input name="subject" type="date" id="subject" class="form-control ps-5"
+                                                    placeholder="Your subject :">
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Tanggal Pelaksanaan </label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="book" class="fea icon-sm icons"></i>
+                                                <input name="subject" type="date" id="subject" class="form-control ps-5"
+                                                    placeholder="Your subject :">
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Provinsi <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="map-pin" class="fea icon-sm icons"></i>
+                                                <input name="name" id="name" type="button" class="form-control ps-5"
+                                                    placeholder="Provinsi" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <div class="dropdown-menu">
+                                                    <a href="javascript:void(0)" class="dropdown-item">Jawa Tengah</a>
+                                                    <a href="javascript:void(0)" class="dropdown-item">Jawa Barat</a>
+                                                    <a href="javascript:void(0)" class="dropdown-item">Jawa Timur</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Kota / Kabupaten <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="map-pin" class="fea icon-sm icons"></i>
+                                                <input name="name" id="name" type="button" class="form-control ps-5"
+                                                    placeholder="Provinsi" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <div class="dropdown-menu">
+                                                    <a href="javascript:void(0)" class="dropdown-item">Surakarta</a>
+                                                    <a href="javascript:void(0)" class="dropdown-item">Surabaya</a>
+                                                    <a href="javascript:void(0)" class="dropdown-item">Semarang</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Lokasi</label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="home" class="fea icon-sm icons"></i>
+                                                <textarea name="comments" id="comments" rows="4"
+                                                    class="form-control ps-5" placeholder=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Deskripsi</label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="book" class="fea icon-sm icons"></i>
+                                                <textarea name="comments" id="comments" rows="4"
+                                                    class="form-control ps-5" placeholder=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Syarat dan Ketentuan</label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="edit" class="fea icon-sm icons"></i>
+                                                <textarea name="comments" id="comments" rows="4"
+                                                    class="form-control ps-5" placeholder=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Munculkan Nilai</label>
+                                            <div class="form-icon position-relative d-flex gap-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <div class="form-check mb-0">
+                                                        <input class="form-check-input" checked type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault1">
+                                                        <label class="form-check-label"
+                                                            for="flexRadioDefault1">Ya</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <div class="form-check mb-0">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault" id="flexRadioDefault2">
+                                                        <label class="form-check-label"
+                                                            for="flexRadioDefault2">Tidak</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Terima Peserta Secara Otomatis
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="form-icon position-relative d-flex gap-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <div class="form-check mb-0">
+                                                        <input class="form-check-input" checked type="radio"
+                                                            name="flexRadioDefault2" id="flexRadioDefault1">
+                                                        <label class="form-check-label"
+                                                            for="flexRadioDefault1">Ya</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <div class="form-check mb-0">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault2" id="flexRadioDefault2">
+                                                        <label class="form-check-label"
+                                                            for="flexRadioDefault2">Tidak</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Gunakan Kolom Isian Tambahan
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="form-icon position-relative d-flex gap-4">
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <div class="form-check mb-0">
+                                                        <input class="form-check-input" checked type="radio"
+                                                            name="flexRadioDefault3" id="flexRadioDefault1">
+                                                        <label class="form-check-label"
+                                                            for="flexRadioDefault1">Ya</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="custom-control custom-radio custom-control-inline">
+                                                    <div class="form-check mb-0">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="flexRadioDefault3" id="flexRadioDefault2">
+                                                        <label class="form-check-label"
+                                                            for="flexRadioDefault2">Tidak</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                </div><!--end row-->
+
+                                <div class="row mt-4 w-50 gap-2 p-2">
+
+                                    <input type="submit" id="submit" name="send" class="btn btn-primary w-25"
+                                        value="Simpan">
+                                    <input type="submit" id="submit" name="send" class="btn btn-secondary w-25"
+                                        value="Batal">
+
+                                </div><!--end row-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <img src="assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+
+
+            <div class="position-sticky bottom-0 z-index-1 text-end px-5 h-25">
+                <a href="#" onclick="topFunction()" id="back-to-top" class="position-relative ms-auto back-to-top"><i
+                        data-feather="arrow-up" class="fea icon-sm icons align-middle "></i></a>
+            </div>
+        </section>
+        <!-- ends tabel -->
+    </main>
+
+
+    <!-- Footer Start -->
+    <footer class="footer bg-gray">
+
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-60">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                <a href="#" class="logo-footer w-100">
+                                    <img src="assets/images/logo-bottom.png" alt="">
+                                </a>
+                                <p class="text-white mt-5 fw-normal opacity-50">Jl. Jendral Sudirman, Senayan,
+                                    Jakarta-10270
+                                    <br>
+                                    Telp: (021) 57033030
+                                </p>
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kemendikbudristek</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Lembaga Administrasi Negara</h5>
+                                        <p class="fw-normal "><a href="" class="text-white opacity-50">www.lan.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Merdeka Belajar</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.merdekabelajar.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kementerian PAN dan RB</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.menpan.go.id</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                    </div>
+                </div><!--end row-->
+            </div>
+
+            <div class="py-4">
+                <hr>
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p>©
+                                <script>document.write(new Date().getFullYear())</script> Kemendikbudristek</a>
+                            </p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end mb-0">
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-youtube fs-4"></i>
+                                    <span>Wiyata Kinarya Merdeka Belajar</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-instagram fs-4"></i>
+                                    <span>wkmb.kemendikbudristek</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div><!--end col-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+    <!-- javascript -->
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="assets/libs/feather-icons/feather.min.js"></script>
+    <script src="assets/js/plugins.init.js"></script>
+    <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="assets/js/app.js"></script>
+    <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tambah Artikel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="Version" content="v4.4.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon"
+        href="https://ppid.kemdikbud.go.id/senayan/uploads/logo_kemdikbud_ori7575_77601df063.png" />
+
+    <!-- Css -->
+    <link href="../assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" class="theme-opt" rel="stylesheet"
+        type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+    <!-- Style Css-->
+    <link href="../assets/css/style.min.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../assets/css/custom.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container-fluid px-5 ">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="../assets/images/wkmb-logo.png" height="48" class="logo-light-mode" alt="">
+                    <img src="../assets/images/wkmb-logo.png" height="48" class="logo-dark-mode" alt="">
+                </a>
+                <!-- Logo End -->
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!-- Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item ps-1 mb-0">
+                        <button class="btn border-0 p-0 m-0" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="d-flex gap-3 align-items-center">
+                                <span class="profile-ava d-flex align-items-center justify-content-center">
+                                    <strong>AT</strong>
+                                </span>
+                                <div class="profile-data d-flex">
+                                    <p class=" fw-bold m-0">Agus Triarso</p>
+                                    <i class="uil uil-angle-down"></i>
+                                </div>
+
+                            </div>
+                        </button>
+                        <div class="dropdown-menu p-3  flex-column justify-content-between" style="width: 250px;">
+                            <div>
+                                <h6 class="text-gray">Agus Triarso</h6>
+                                <p class="text-muted">Pusat Data dan Teknologi Informasi</p>
+                                <button class="btn btn-soft-primary  w-100 shadow-none fs-14">Konten Saya</button>
+                                <button class="btn btn-soft-danger w-100 shadow-none mt-2 fs-14">Keluar</button>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <!--Login button End -->
+
+                <div id="navigation kms">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="../index.html" class="sub-menu-item">Beranda</a></li>
+                        <li><a href="/" class="sub-menu-item">Pengetahuan Lainnya</a></li>
+
+                        <li><a href="javascript:void(0)" class="sub-menu-item fw-bold" data-bs-toggle="modal"
+                                data-bs-target="#addContent">
+                                <span class="position-absolute add-content">
+                                </span>
+                                <b>Tambah Konten</b>
+                            </a>
+                        </li>
+
+
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        <!-- Modal -->
+        <div class="modal fade" id="addContent" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded shadow border-0">
+                    <div class="modal-body p-4">
+                        <div class="modal-title mb-4 fw-bold text-gray text-center">Pilih Jenis Konten</div>
+
+                        <div class="d-flex gap-2 justify-content-between">
+                            <a href="tambah-media.html" class="btn btn-primary d-block flex-1 h-100 py-3">
+                                <i data-feather="film" class="fea icon-md"></i>
+                                <p class="fw-bold m-0">Media</p>
+                            </a>
+
+                            <a href="tambah-artikel.html" class="btn bg-secondary d-block flex-1 h-100 py-3 text-white">
+                                <i data-feather="book-open" class="fea icon-md"></i>
+                                <p class="fw-bold m-0">Artikel</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / Modal -->
+
+        <!-- Hero Start -->
+        <section class="bg-half-170 d-table w-100 hero">
+            <img src="../assets/images/element-light.png" class="position-absolute left-0 top-0 z-index-0" alt=""
+                draggable="false">
+            <img src="../assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+            <div class="container z-index-1">
+                <nav aria-label="breadcrumb" class="d-inline-block">
+                    <ul class="breadcrumb m-0 p-0 bg-transparent ">
+                        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tambah Konten (Artikel)</li>
+                    </ul>
+                </nav>
+
+                <h4 class="text-white fw-bold mt-3">Tambah Artikel</h4>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+
+        <!-- start form -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="card border-b-primary">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="component-wrapper p-4">
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <a class="btn w-100 d-flex align-items-center justify-content-center"
+                                                style="border: 2px dashed #e4e4e4 !important; height: 72px; font-size: 14px;">Unggah
+                                                File</a>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Judul <span class="text-danger">*</span></label>
+                                            <input name="judul" id="judul" type="text" class="form-control"
+                                                placeholder="Masukkan nama web ">
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Tags <span class="text-danger">*</span></label>
+                                            <input name="judul" id="judul" type="text" class="form-control"
+                                                placeholder="Konten tags ">
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Kategori <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="grid" class="fea icon-sm icons"></i>
+                                                <select class="form-select form-control ps-5"
+                                                    aria-label="Default select example">
+                                                    <option selected>Urusan
+                                                        Perencanaan</option>
+                                                    <option value="1">Urusan Hukum</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Deskripsi</label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="book" class="fea icon-sm icons"></i>
+                                                <textarea name="comments" id="comments" rows="4"
+                                                    class="form-control ps-5" placeholder=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+
+
+                            </div>
+                        </div>
+                        <div class="col-7 p-4">
+                            <div class="bg-light h-100">Untuk text editor</div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 p-4 align-self-end">
+                        <input type="submit" id="submit" name="send" class="btn btn-primary" value="Simpan">
+                        <input type="submit" id="submit" name="send" class="btn btn-secondary" value="Batal">
+                    </div><!--end row-->
+                </div>
+
+
+
+            </div>
+
+            <img src="../assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+
+
+            <div class="position-sticky bottom-0 z-index-1 text-end px-5 h-25">
+                <a href="#" onclick="topFunction()" id="back-to-top" class="position-relative ms-auto back-to-top"><i
+                        data-feather="arrow-up" class="fea icon-sm icons align-middle "></i></a>
+            </div>
+
+
+        </section>
+        <!-- ends tabel -->
+    </main>
+
+
+    <!-- Footer Start -->
+    <footer class="footer bg-gray">
+
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-60">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                <a href="#" class="logo-footer w-100">
+                                    <img src="../assets/images/logo-bottom.png" alt="">
+                                </a>
+                                <p class="text-white mt-5 fw-normal opacity-50">Jl. Jendral Sudirman, Senayan,
+                                    Jakarta-10270
+                                    <br>
+                                    Telp: (021) 57033030
+                                </p>
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kemendikbudristek</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Lembaga Administrasi Negara</h5>
+                                        <p class="fw-normal "><a href="" class="text-white opacity-50">www.lan.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Merdeka Belajar</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.merdekabelajar.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kementerian PAN dan RB</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.menpan.go.id</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                    </div>
+                </div><!--end row-->
+            </div>
+
+            <div class="py-4">
+                <hr>
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p>©
+                                <script>document.write(new Date().getFullYear())</script> Kemendikbudristek</a>
+                            </p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end mb-0">
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-youtube fs-4"></i>
+                                    <span>Wiyata Kinarya Merdeka Belajar</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-instagram fs-4"></i>
+                                    <span>wkmb.kemendikbudristek</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div><!--end col-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="../assets/libs/feather-icons/feather.min.js"></script>
+    <script src="../assets/js/plugins.init.js"></script>
+    <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="../assets/js/app.js"></script>
+    <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+</body>
+
+</html>

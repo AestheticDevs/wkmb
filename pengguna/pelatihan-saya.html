@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pelatihan Saya</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="Version" content="v4.4.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon"
+        href="https://ppid.kemdikbud.go.id/senayan/uploads/logo_kemdikbud_ori7575_77601df063.png" />
+
+    <!-- Css -->
+    <link href="../assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" class="theme-opt" rel="stylesheet"
+        type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+    <!-- Style Css-->
+    <link href="../assets/css/style.min.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../assets/css/custom.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- tabel -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css" rel="stylesheet" type="text/css" /> -->
+</head>
+
+<body>
+
+    <main class="position-relative bg-primary">
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container-fluid px-5 ">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="../assets/images/wkmb-logo.png" height="48" class="logo-light-mode" alt="">
+                    <img src="../assets/images/wkmb-logo.png" height="48" class="logo-dark-mode" alt="">
+                </a>
+                <!-- Logo End -->
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!-- Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item ps-1 mb-0">
+
+                        <a href="javascript:void(0)" class="sub-menu-item fw-bold" data-bs-toggle="modal"
+                            data-bs-target="#addContent">
+                            <button class="btn btn-primary rounded-5">Masuk</button>
+                        </a>
+
+                    </li>
+                    </li>
+                </ul>
+                <!--Login button End -->
+
+
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Beranda</a></li>
+                        <li><a href="./pengguna/login.html" class="sub-menu-item">Pusat Pengetahuan</a></li>
+                        <li><a href="/" class="sub-menu-item">Mitra</a></li>
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Pusat Pembelajaran</a>
+                            <span class="menu-arrow text-white"></span>
+                            <ul class="submenu">
+                                <li><a href="">Pelatihan Terbaru</a></li>
+                                <li><a href="pelatihan-saya.html">Pelatihan Saya</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/" class="sub-menu-item">Registrasi</a>
+
+                        </li>
+                        <li><a href="/" class="sub-menu-item">Bantuan</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="addContent" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded shadow border-0">
+                    <div class="modal-body p-4">
+                        <div class="container-fluid px-0">
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Masuk Sebagai</label>
+                                        <div class="form-icon position-relative mb-2">
+                                            <i data-feather="user" class="fea icon-sm icons"></i>
+
+                                            <select class="form-select form-control ps-5"
+                                                aria-label="Default select example">
+                                                <option selected>Pegawai</option>
+                                                <option value="1">Mitra WKMB</option>
+                                                <option value="1">Pengelola</option>
+                                            </select>
+                                        </div>
+                                        <span class="text-muted text-sm mt-2">Silahkan masuk menggunakan akun
+                                            DikbudHR</span>
+
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">NIP</label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="user" class="fea icon-sm icons"></i>
+                                            <input name="nip" id="nip" type="number" class="form-control ps-5"
+                                                placeholder="Masukkan NIP">
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="key" class="fea icon-sm icons"></i>
+                                            <input name="password" id="password" type="password"
+                                                class="form-control ps-5" placeholder="Masukkan Password">
+                                        </div>
+                                    </div>
+                                    <a href=""><span class="float-end fw-bold text-primary">Lupa Password ?</span>
+                                    </a>
+                                </div>
+                                <!--end col-->
+
+
+                            </div><!--end row-->
+                            <div class="row mt-5">
+                                <div class="col-sm-12">
+                                    <input type="submit" id="submit" name="send" class="btn btn-primary w-100"
+                                        value="Masuk">
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / Modal -->
+
+        <!-- Hero Start -->
+        <section class="bg-half-170 d-table w-100 hero">
+            <img src="../assets/images/element-light.png" class="position-absolute left-0 top-0 z-index-0" alt=""
+                draggable="false">
+            <img src="../assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+            <div class="container z-index-1">
+                <nav aria-label="breadcrumb" class="d-inline-block">
+                    <ul class="breadcrumb m-0 p-0 bg-transparent ">
+                        <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Pelatihan Saya</li>
+                    </ul>
+                </nav>
+
+                <h4 class="text-white fw-bold mt-3">Pelatihan Saya</h4>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Job List Start -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="features-absolute">
+                            <form class="card rounded p-4 mt-4 shadow-md" style="border-bottom: 2px solid #fea430;">
+                                <div class="row text-start">
+                                    <div class="col-lg-10 col-md-4 pe-0">
+                                        <div class="mb-0">
+                                            <input type="text" class="form-control pe-0 rounded-5 px-3" required
+                                                placeholder="Judul pelatihan">
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-lg-2 col-md-8 pe-0">
+                                        <div class="row align-items-center">
+                                            <div class="d-grid">
+                                                <button class="searchbtn btn btn-primary rounded-5"> <i
+                                                        class="fea icon-sm icons text-white" data-feather="search"
+                                                        style="opacity: 100%; stroke-width: 2px;"></i></button>
+                                            </div>
+                                        </div><!--end row-->
+                                    </div> <!---end col-->
+
+                                </div><!--end row-->
+                            </form>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            <div class="container mt-5 mt-sm-0">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="row align-items-center mb-3">
+                            <div class="col-lg-8 col-md-8">
+                                <div class="section-title">
+                                    <span class="text-muted me-3">Showing 1 - 15 out of 452</span>
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+
+                        <div class="row">
+                            <!-- List Pelatihan -->
+                            <div class="row gap-4 p-0 m-0">
+                                <div class="col-12">
+                                    <div
+                                        class="job-box job-primary d-md-flex align-items-start border-0 shadow rounded p-3 position-relative bg-white">
+
+                                        <img src="https://simpatik.belajar.kemdikbud.go.id//uploads/tipe_pelatihan/ad47180f739313f34fd4b50b91684742.jpg"
+                                            alt="" class="p-2 flex-1" style="width: 300px">
+
+                                        <div class="p-2 flex-1">
+                                            <div class="d-flex gap-3 justify-content-between align-items-start">
+                                                <a href="javascript:void(0);" class="card-title">Sosialisasi Pencegahan
+                                                    Tiga Isu Kekerasan di Lingkungan Kerja - Sesi 1 (17 Juli 2023)</a>
+                                                <div class="badge bg-soft-success fs-12">
+                                                    Diterima Sebagai Peserta</div>
+                                            </div>
+
+
+                                            <ul class="list-unstyled mb-0 mt-4 d-flex flex-wrap flex-column gap-2">
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-chat-bubble-user icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Penyelenggara : </span>
+                                                        Pusat Penguatan Karakter Kemendikbudristek
+                                                    </span>
+                                                </li>
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-calendar-alt icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Tanggal Pelaksanaan : </span>
+                                                        2023-03-20 s.d 2023-03-25
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                            <div class="btn btn-primary mt-3 fs-14">Detail</div>
+
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-12">
+                                    <div
+                                        class="job-box job-primary d-md-flex align-items-start border-0 shadow rounded p-3 position-relative bg-white">
+
+                                        <img src="https://simpatik.belajar.kemdikbud.go.id//uploads/tipe_pelatihan/ad47180f739313f34fd4b50b91684742.jpg"
+                                            alt="" class="p-2 flex-1" style="width: 300px">
+
+                                        <div class="p-2 flex-1">
+                                            <div class="d-flex gap-3 justify-content-between align-items-start">
+                                                <a href="javascript:void(0);" class="card-title">Sosialisasi Pencegahan
+                                                    Tiga Isu Kekerasan di Lingkungan Kerja - Sesi 1 (17 Juli 2023)</a>
+                                                <div class="badge bg-soft-accent fs-12">
+                                                    Menunggu Verifikasi</div>
+                                            </div>
+
+                                            <ul class="list-unstyled mb-0 mt-4 d-flex flex-wrap flex-column gap-2">
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-chat-bubble-user icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Penyelenggara : </span>
+                                                        Pusat Penguatan Karakter Kemendikbudristek
+                                                    </span>
+                                                </li>
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-calendar-alt icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Tanggal Pelaksanaan : </span>
+                                                        2023-03-20 s.d 2023-03-25
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                            <div class="btn btn-primary mt-3 fs-14">Detail</div>
+
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-12">
+                                    <div
+                                        class="job-box job-primary d-md-flex align-items-start border-0 shadow rounded p-3 position-relative bg-white">
+
+                                        <img src="https://simpatik.belajar.kemdikbud.go.id//uploads/tipe_pelatihan/ad47180f739313f34fd4b50b91684742.jpg"
+                                            alt="" class="p-2 flex-1" style="width: 300px">
+
+                                        <div class="p-2 flex-1">
+
+                                            <div class="d-flex gap-3 justify-content-between align-items-start">
+                                                <a href="javascript:void(0);" class="card-title">Sosialisasi Pencegahan
+                                                    Tiga Isu Kekerasan di Lingkungan Kerja - Sesi 1 (17 Juli 2023)</a>
+                                                <div class="badge bg-soft-success fs-12">
+                                                    Diterima Sebagai Peserta</div>
+                                            </div>
+
+                                            <ul class="list-unstyled mb-0 mt-4 d-flex flex-wrap flex-column gap-2">
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-chat-bubble-user icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Penyelenggara : </span>
+                                                        Pusat Penguatan Karakter Kemendikbudristek
+                                                    </span>
+                                                </li>
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-calendar-alt icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Tanggal Pelaksanaan : </span>
+                                                        2023-03-20 s.d 2023-03-25
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                            <div class="btn btn-primary mt-3 fs-14">Detail</div>
+
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                            </div>
+                            <!-- / List Pelatihan -->
+
+
+                            <div class="col-12 mt-4 pt-2">
+                                <!-- PAGINATION START -->
+                                <ul class="pagination justify-content-center mb-0">
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)"
+                                            aria-label="Previous">Prev</a></li>
+                                    <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)"
+                                            aria-label="Next">Next</a></li>
+                                </ul>
+                                <!-- PAGINATION END -->
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Job List End -->
+
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="footer bg-gray">
+
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-60">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                <a href="#" class="logo-footer w-100">
+                                    <img src="../assets/images/logo-bottom.png" alt="">
+                                </a>
+                                <p class="text-white mt-5 fw-normal opacity-50">Jl. Jendral Sudirman, Senayan,
+                                    Jakarta-10270
+                                    <br>
+                                    Telp: (021) 57033030
+                                </p>
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kemendikbudristek</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Lembaga Administrasi Negara</h5>
+                                        <p class="fw-normal "><a href="" class="text-white opacity-50">www.lan.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Merdeka Belajar</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.merdekabelajar.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kementerian PAN dan RB</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.menpan.go.id</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                    </div>
+                </div><!--end row-->
+            </div>
+
+            <div class="py-4">
+                <hr>
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p>©
+                                <script>document.write(new Date().getFullYear())</script> Kemendikbudristek</a>
+                            </p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end mb-0">
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-youtube fs-4"></i>
+                                    <span>Wiyata Kinarya Merdeka Belajar</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-instagram fs-4"></i>
+                                    <span>wkmb.kemendikbudristek</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div><!--end col-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+
+    <!-- javascript -->
+    <!-- JAVASCRIPT -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="../assets/libs/feather-icons/feather.min.js"></script>
+    <script src="../assets/js/plugins.init.js"></script>
+    <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="../assets/js/app.js"></script>
+    <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+    <!-- tabel js -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
+
+</body>
+
+</html>

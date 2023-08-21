@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sistem Manajemen Pengetahuan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="Version" content="v4.4.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon"
+        href="https://ppid.kemdikbud.go.id/senayan/uploads/logo_kemdikbud_ori7575_77601df063.png" />
+
+    <!-- Css -->
+    <link href="../assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" class="theme-opt" rel="stylesheet"
+        type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+    <!-- Style Css-->
+    <link href="../assets/css/style.min.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../assets/css/custom.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <main class="position-relative bg-primary">
+
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container-fluid px-5 ">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="../assets/images/wkmb-logo.png" height="48" class="logo-light-mode" alt="">
+                    <img src="../assets/images/wkmb-logo.png" height="48" class="logo-dark-mode" alt="">
+                </a>
+                <!-- Logo End -->
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!-- Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item ps-1 mb-0">
+                        <button class="btn border-0 p-0 m-0" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="d-flex gap-3 align-items-center">
+                                <span class="profile-ava d-flex align-items-center justify-content-center">
+                                    <strong>PP</strong>
+                                </span>
+                                <div class="profile-data d-flex">
+                                    <p class=" fw-bold m-0">Pusdiklat</p>
+                                    <i class="uil uil-angle-down"></i>
+                                </div>
+
+                            </div>
+                        </button>
+                        <div class="dropdown-menu p-3  flex-column justify-content-between" style="width: 250px;">
+                            <div>
+                                <h6 class="text-gray">Pusdiklat</h6>
+                                <!-- <p class="text-muted">Pusat Data dan Teknologi Informasi</p> -->
+                                <!-- <a href="konten-saya.html" class="btn btn-soft-primary  w-100 shadow-none fs-14">Konten Saya</a> -->
+                                <button class="btn btn-soft-danger w-100 shadow-none mt-2 fs-14">Keluar</button>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <!--Login button End -->
+
+                <div id="navigation kms">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="../index.html" class="sub-menu-item">Beranda</a></li>
+                        <li><a href="pengetahuan-lain.html" class="sub-menu-item">Pengetahuan Lainnya</a></li>
+
+
+                    </ul><!--end navigation menu-->
+
+
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        <!-- Modal -->
+        <div class="modal fade" id="addContent" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded shadow border-0">
+                    <div class="modal-body p-4">
+                        <div class="modal-title mb-4 fw-bold text-gray text-center">Pilih Jenis Konten</div>
+
+                        <div class="d-flex gap-2 justify-content-between">
+                            <a href="tambah-media.html" class="btn btn-primary d-block flex-1 h-100 py-3">
+                                <i data-feather="film" class="fea icon-md"></i>
+                                <p class="fw-bold m-0">Media</p>
+                            </a>
+
+                            <a href="tambah-artikel.html" class="btn bg-secondary d-block flex-1 h-100 py-3 text-white">
+                                <i data-feather="book-open" class="fea icon-md"></i>
+                                <p class="fw-bold m-0">Artikel</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / Modal -->
+
+        <!-- Hero Start -->
+        <section class=" bg-half-170 d-table w-100 hero">
+            <img src="../assets/images/element-light.png" class="position-absolute left-0 top-0 z-index-0" alt=""
+                draggable="false">
+            <img src="../assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+            <div class="container z-index-1">
+                <h2 class="text-white fw-bold mt-3 text-center">SISTEM MANAJEMEN PENGETAHUAN</h2>
+                <h6 class="text-accent fw-bold text-center mt-3">HALAMAN PENGKAJI MATERI</h6>
+
+                <div class="component-wrapper mt-5">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded gap-2" id="pills-tab"
+                                role="tablist">
+
+                                <li class="nav-item">
+                                    <a class="nav-link rounded  active" id="verif-peserta-tab" data-bs-toggle="pill"
+                                        href="#verif-peserta" role="tab" aria-controls="verif-peserta"
+                                        aria-selected="false">
+                                        <div class="text-center py-2">
+                                            <h6 class="mb-0 fs-16">Menunggu Persetujuan</h6>
+                                        </div>
+
+                                        <span class="p-2 position-absolute badge">1130</span>
+                                    </a><!--end nav link-->
+                                </li><!--end nav item-->
+
+                                <li class="nav-item">
+                                    <a class="nav-link rounded " id="dok-pelatihan-tab" data-bs-toggle="pill"
+                                        href="#dok-pelatihan" role="tab" aria-controls="dok-pelatihan"
+                                        aria-selected="false">
+                                        <div class="text-center py-2">
+                                            <h6 class="mb-0 fs-16">Ditolak</h6>
+                                        </div>
+
+                                        <span class="p-2 bg-soft-light position-absolute badge">120</span>
+
+                                    </a><!--end nav link-->
+                                </li><!--end nav item-->
+
+                                <li class="nav-item">
+                                    <a class="nav-link rounded" id="unggah-laporan-tab" data-bs-toggle="pill"
+                                        href="#unggah-laporan" role="tab" aria-controls="unggah-laporan"
+                                        aria-selected="false">
+                                        <div class="text-center py-2">
+                                            <h6 class="mb-0 fs-16">Disetujui</h6>
+                                        </div>
+
+                                        <span class="p-2 bg-soft-light position-absolute badge">3955</span>
+
+                                    </a><!--end nav link-->
+                                </li><!--end nav item-->
+
+                            </ul><!--end nav pills-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div>
+            </div><!--end container-->
+
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Pelatihan -->
+        <section class="section bg-light border-bottom">
+            <div class="container">
+                <div class="">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <form class="card p-4 mt-4 shadow-md" style="border-bottom: 2px solid #fea430;">
+
+                                    <select id="selectRumpun" class="form-control pe-0 rounded-5 px-3">
+                                        <option value="Barang Milik Negara"></option>
+                                        <option value="Cagar Budaya"></option>
+                                        <option value="Hubungan Masyarakat"></option>
+                                        <option value="Hukum"></option>
+                                        <option value="Kebahasaan"></option>
+                                    </select>
+
+                                </form>
+
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end container-->
+
+
+
+                    <!-- <h4 class="text-primary fw-bold mb-0">Total Jumlah Konten <label
+                            class="text-accent fw-bold">21</label>
+                    </h4> -->
+
+                    <!-- Filter -->
+                    <div class="filter d-flex gap-2 mb-1 mt-5">
+                        <input type="checkbox" class="btn-check" name="options" id="option1" autocomplete="off">
+                        <label class="btn btn-secondary" for="option1">Audio</label>
+
+                        <input type="checkbox" class="btn-check" name="options" id="option2" autocomplete="off">
+                        <label class="btn btn-secondary" for="option2">Video</label>
+
+                        <input type="checkbox" class="btn-check" name="options" id="option4" autocomplete="off">
+                        <label class="btn btn-secondary" for="option4">Artikel</label>
+                    </div>
+                    <!-- / Filter -->
+
+                    <div class="row mt-4">
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+
+                            <a href="detail-konten.html">
+                                <div class="card h-100 shadow-md">
+                                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN
+                                            TIGA ISU KEKERASAN DI
+                                            LINGKUNGAN
+                                            KERJA - SESI
+                                            25 (22 AGUSTUS 2023)
+                                        </h5>
+
+                                        <div class="d-flex mt-4 justify-content-between align-items-center">
+                                            <span class="text-gray bg-light py-2 px-4 rounded-5">66
+                                                peserta</span>
+                                            <div class="d-flex gap-1">
+                                                <p class="text-gray fw-bold m-0">4.8</p>
+                                                <i class="mdi mdi-star text-accent"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card h-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN
+                                        TIGA ISU KEKERASAN DI
+                                        LINGKUNGAN
+                                        KERJA - SESI
+                                        25 (22 AGUSTUS 2023)
+                                    </h5>
+
+                                    <div class="d-flex mt-4 justify-content-between align-items-center">
+                                        <span class="text-gray bg-light py-2 px-4 rounded-5">66
+                                            peserta</span>
+                                        <div class="d-flex gap-1">
+                                            <p class="text-gray fw-bold m-0">4.8</p>
+                                            <i class="mdi mdi-star text-accent"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card h-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN
+                                        TIGA ISU KEKERASAN DI
+                                        LINGKUNGAN
+                                        KERJA - SESI
+                                        25 (22 AGUSTUS 2023)
+                                    </h5>
+
+                                    <div class="d-flex mt-4 justify-content-between align-items-center">
+                                        <span class="text-gray bg-light py-2 px-4 rounded-5">66
+                                            peserta</span>
+                                        <div class="d-flex gap-1">
+                                            <p class="text-gray fw-bold m-0">4.8</p>
+                                            <i class="mdi mdi-star text-accent"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card h-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN
+                                        TIGA ISU KEKERASAN DI
+                                        LINGKUNGAN
+                                        KERJA - SESI
+                                        25 (22 AGUSTUS 2023)
+                                    </h5>
+
+                                    <div class="d-flex mt-4 justify-content-between align-items-center">
+                                        <span class="text-gray bg-light py-2 px-4 rounded-5">66
+                                            peserta</span>
+                                        <div class="d-flex gap-1">
+                                            <p class="text-gray fw-bold m-0">4.8</p>
+                                            <i class="mdi mdi-star text-accent"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card h-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN
+                                        TIGA ISU KEKERASAN DI
+                                        LINGKUNGAN
+                                        KERJA - SESI
+                                        25 (22 AGUSTUS 2023)
+                                    </h5>
+
+                                    <div class="d-flex mt-4 justify-content-between align-items-center">
+                                        <span class="text-gray bg-light py-2 px-4 rounded-5">66
+                                            peserta</span>
+                                        <div class="d-flex gap-1">
+                                            <p class="text-gray fw-bold m-0">4.8</p>
+                                            <i class="mdi mdi-star text-accent"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card h-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN
+                                        TIGA ISU KEKERASAN DI
+                                        LINGKUNGAN
+                                        KERJA - SESI
+                                        25 (22 AGUSTUS 2023)
+                                    </h5>
+
+                                    <div class="d-flex mt-4 justify-content-between align-items-center">
+                                        <span class="text-gray bg-light py-2 px-4 rounded-5">66
+                                            peserta</span>
+                                        <div class="d-flex gap-1">
+                                            <p class="text-gray fw-bold m-0">4.8</p>
+                                            <i class="mdi mdi-star text-accent"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end container-->
+            </div>
+        </section><!--end section-->
+        <!-- Pelatihan -->
+
+
+
+        <img src="../assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+
+
+        <div class="position-sticky bottom-0 z-index-1 text-end px-5 h-25">
+            <a href="#" onclick="topFunction()" id="back-to-top" class="position-relative ms-auto back-to-top"><i
+                    data-feather="arrow-up" class="fea icon-sm icons align-middle "></i></a>
+        </div>
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="footer bg-gray">
+
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-60">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                <a href="#" class="logo-footer w-100">
+                                    <img src="../assets/images/logo-bottom.png" alt="">
+                                </a>
+                                <p class="text-white mt-5 fw-normal opacity-50">Jl. Jendral Sudirman, Senayan,
+                                    Jakarta-10270
+                                    <br>
+                                    Telp: (021) 57033030
+                                </p>
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kemendikbudristek</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Lembaga Administrasi Negara</h5>
+                                        <p class="fw-normal "><a href="" class="text-white opacity-50">www.lan.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Merdeka Belajar</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.merdekabelajar.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kementerian PAN dan RB</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.menpan.go.id</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                    </div>
+                </div><!--end row-->
+            </div>
+
+            <div class="py-4">
+                <hr>
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p>©
+                                <script>document.write(new Date().getFullYear())</script> Kemendikbudristek</a>
+                            </p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end mb-0">
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-youtube fs-4"></i>
+                                    <span>Wiyata Kinarya Merdeka Belajar</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-instagram fs-4"></i>
+                                    <span>wkmb.kemendikbudristek</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div><!--end col-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.min.js"
+        integrity="sha512-xpawU2EKh0HLTLWu8khGczejw+OaWWr+JBcbFBWtRUIkkhuMRZZeEFxY0n51aeC9YF4jxOMzd0pTR9m0tiSvsQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="../assets/libs/tiny-slider/min/tiny-slider.js"></script>
+    <!-- Main Js -->
+    <script src="../assets/libs/feather-icons/feather.min.js"></script>
+    <script src="../assets/js/plugins.init.js"></script>
+
+    <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="../assets/js/app.js"></script>
+    <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    <script>
+            (function ($) {
+
+                $.fn.select3 = function (options) {
+                    var dataItems = [];
+                    var selectorID = '#' + this.attr('id');
+
+                    $(selectorID).find('option').each(function (index, element) {
+
+                        if (element.text != '') {
+                            dataItems.push(element.text.trim());
+                        }
+                        else {
+                            dataItems.push(element.value.trim());
+                        }
+
+                    });
+
+                    var opts = $.extend({}, $.fn.select3.defaults, options);
+
+                    var idDiv = this.attr('id') + 'searchSelect3';
+                    var idInput = this.attr('id') + 'searchSelect3_Input';
+                    var idClose = this.attr('id') + 'searchSelect3_Times';
+                    var idDown = this.attr('id') + 'searchSelect3_Caret_Down';
+                    var idList = this.attr('id') + 'searchSelect3_List';
+                    var idListLi = this.attr('id') + 'searchSelect3_List_LI';
+
+                    var selectorDiv = '#' + this.attr('id') + 'searchSelect3';
+                    var selectorInput = '#' + this.attr('id') + 'searchSelect3_Input';
+                    var selectorClose = '#' + this.attr('id') + 'searchSelect3_Times';
+                    var selectorDown = '#' + this.attr('id') + 'searchSelect3_Caret_Down';
+                    var selectorList = '#' + this.attr('id') + 'searchSelect3_List';
+                    var selectorListLi = '#' + this.attr('id') + 'searchSelect3_List_LI';
+
+                    var buildELement = $('<div class="searchSelect3" id="' + idDiv + '" style="position:relative;"><input class="searchSelect3_Input form-control pe-0 rounded-5 px-3" placeholder="' + opts.placeholder + '" value="' + opts.defaultvalue + '" id="' + idInput + '"><span class="fa fa-times searchSelect3_Times" id="' + idClose + '"></span><span class="fa fa-caret-down searchSelect3_Caret_Down" id="' + idDown + '"></span></div>');
+
+                    if ($(selectorDiv).length > 0) {
+                        $(selectorDiv).remove();
+                    }
+
+                    this.after(buildELement);
+
+                    if (opts.width > 0) {
+                        $(selectorInput).css('width', opts.width);
+                        $(selectorDown).css('left', (opts.width - 20));
+                        $(selectorClose).css('left', (opts.width - 40));
+                    }
+
+
+                    var cache = {};
+                    var drew = false;
+                    this.hide();
+
+
+
+                    $(document).on('click', function (e) {
+                        //untuk menghilangkan list saat unfocus
+                        if ($(e.target).parent().is("li[id*='" + idListLi + "']") == false) {
+                            if ($(e.target).attr('id') != idInput && $(e.target).attr('id') != idDown) {
+                                $(selectorList).empty();
+                                $(selectorList).css('z-index', -1);
+                                $(selectorClose).hide();
+                            }
+                        }
+
+
+
+                    });
+
+
+
+
+                    var showList = function (query, valuee) {
+
+
+
+                        //Check if we've searched for this term before
+                        if (query in cache) {
+                            results = cache[query];
+                        } else {
+                            //Case insensitive search for our people array
+                            var results = $.grep(dataItems, function (item) {
+                                return item.search(RegExp(query, "i")) != -1;
+                            });
+
+                            //Add results to cache
+                            cache[query] = results;
+                        }
+
+                        //First search
+                        $(selectorList).css('z-index', opts.zIndex);
+
+
+                        if (drew == false) {
+                            //Create list for results
+                            $(selectorInput).after('<ul id="' + idList + '" class="searchSelect3_List w-100 bg-white mt-4 position-absolute rounded-1 p-3 shadow-md list-unstyled" style="z-index:' + opts.zIndex + '"></ul>');
+
+                            if (opts.width > 0) {
+
+                                $(selectorList).css('width', opts.width);
+
+                            }
+
+                            if (opts.widthList > 0) {
+                                $(selectorList).css('width', opts.widthList);
+                            }
+
+                            //Prevent redrawing/binding of list
+                            drew = true;
+
+                            //Bind click event to list elements in results
+                            $(selectorList).on("click", "li", function () {
+                                var nilai = $(this).text()
+                                $(selectorInput).val(nilai);
+                                $(selectorID).val(nilai);
+                                $(selectorList).empty();
+                                $(selectorClose).show();
+                                $(selectorList).css('z-index', -1);
+                                $(selectorID).change();
+                            });
+
+
+                        }
+                        //Clear old results
+                        else {
+                            $(selectorList).empty();
+                        }
+
+                        var counter = 0;
+                        //Add results to the list
+                        for (term in results) {
+                            counter++;
+                            $(selectorList).append("<li id=" + idListLi + counter + "><label>" + results[term] + "</label></li>");
+                        }
+
+
+
+
+                    };
+
+
+
+                    $(selectorInput).on('click', function (e) {
+                        var query = $(this).val();
+
+                        showList('', query);
+
+
+                        $(selectorClose).hide();
+                        if (query.length > 0) {
+                            $(selectorClose).show();
+                        }
+
+                    });
+
+                    $(selectorInput).on('keyup', function (e) {
+                        $(selectorList).empty();
+                        var query = $(selectorInput).val();
+                        showList(query, query);
+
+                        $(selectorClose).hide();
+                        if (query.length > 0) {
+                            $(selectorClose).show();
+                        }
+
+                        $(selectorID).change();
+                    });
+
+                    //bila key tab di tekan maka akan pindah ke DOM lain, maka dari itu mesti di HIDE LIST nya
+                    $(selectorInput).on('keydown', function (e) {
+                        if (e.which == 9) {
+                            $(selectorList).empty();
+                            $(selectorList).css('z-index', -1);
+                            $(selectorClose).hide();
+                        }
+                    });
+
+                    $(selectorDown).on('click', function (e) {
+                        var query = $(this).val();
+                        if ($(selectorList).find('li').length == 0) {
+                            showList('', query);
+                        }
+                        else {
+                            //$(selectorList).css('z-index', -1);
+                            $(selectorList).empty();
+                            $(selectorList).css('z-index', -1);
+                        }
+
+                        $(selectorClose).hide();
+                        if (query.length > 0) {
+                            $(selectorClose).show();
+                        }
+
+                    });
+
+                    $(selectorClose).on('click', function (e) {
+                        $(selectorInput).val('');
+                        $(selectorClose).hide();
+                        $(selectorID).change();
+
+                    });
+
+
+                    return this;
+                };
+
+                $.fn.select3.defaults = {
+                    placeholder: "",
+                    zIndex: 1,
+                    defaultvalue: "",
+                    width: 0,
+                    widthList: 0
+                };
+
+            }(jQuery));
+        /* END select3.js */
+
+
+        $(document).ready(function (e) {
+
+            $('#selectRumpun').select3({ placeholder: 'Cari Rumpun Pelatihan', zIndex: 100 });
+
+
+        });
+    </script>
+
+
+
+</body>
+
+
+<!-- Mirrored from shreethemes.in/landrick/landing/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Nov 2022 02:46:35 GMT -->
+
+</html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard Pengelola Diklat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="Version" content="v4.4.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon"
+        href="https://ppid.kemdikbud.go.id/senayan/uploads/logo_kemdikbud_ori7575_77601df063.png" />
+
+    <!-- Css -->
+    <link href="../../assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="../../assets/css/bootstrap.min.css" id="bootstrap-style" class="theme-opt" rel="stylesheet"
+        type="text/css" />
+    <!-- Icons Css -->
+    <link href="../../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+    <!-- Style Css-->
+    <link href="../../assets/css/style.min.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+         <!-- Navbar Start -->
+         <header id="topnav" class="defaultscroll sticky">
+            <div class="container-fluid px-5 ">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="../../assets/images/wkmb-logo.png" height="48" class="logo-light-mode" alt="">
+                    <img src="../../assets/images/wkmb-logo.png" height="48" class="logo-dark-mode" alt="">
+                </a>
+                <!-- Logo End -->
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!-- Login button Start-->
+                <ul class="buy-button list-inline mb-0 me-2">
+                    <li class="list-inline-item ps-1 mb-0">
+                        <button class="btn border-0 p-0 m-0" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="d-flex gap-3 align-items-center">
+                                <span class="profile-ava d-flex align-items-center justify-content-center">
+                                    <strong>AT</strong>
+                                </span>
+                                <div class="profile-data d-flex">
+                                    <p class=" fw-bold m-0">Agus Triarso</p>
+                                    <i class="uil uil-angle-down"></i>
+                                </div>
+
+                            </div>
+                        </button>
+                        <div class="dropdown-menu p-3  flex-column justify-content-between" style="width: 250px;">
+                            <div>
+                                <h6 class="text-gray">Agus Triarso</h6>
+                                <p class="text-muted">Pusat Data dan Teknologi Informasi</p>
+                                <button class="btn btn-soft-primary  w-100 shadow-none fs-14">Profil</button>
+                                <a href="../index.html">
+                                    <button class="btn btn-soft-danger w-100 shadow-none mt-2 fs-14">Keluar</button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <!--Login button End -->
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Beranda</a></li>
+                        <li><a href="kelola-pelatihan.html" class="sub-menu-item">Kelola Pelatihan</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+
+        <!-- Hero Start -->
+        <section class="bg-half-170 d-table w-100 hero">
+            <img src="../../assets/images/element-light.png" class="position-absolute left-0 top-0 z-index-0" alt=""
+                draggable="false">
+            <img src="../../assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+            <div class="container z-index-1">
+                <nav aria-label="breadcrumb" class="d-inline-block">
+                    <ul class="breadcrumb m-0 p-0 bg-transparent ">
+                        <li class="breadcrumb-item active" aria-current="page">Beranda</li>
+                    </ul>
+                </nav>
+
+                <h4 class="text-white fw-bold mt-3">Daftar Diklat Yang Tersedia</h4>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+
+        <!-- Job List Start -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="features-absolute">
+                            <form class="card rounded p-4 mt-4 shadow-md" style="border-bottom: 2px solid #fea430;">
+                                <div class="row text-start">
+                                    <div class="col-lg-10 col-md-4 pe-0">
+                                        <div class="mb-0">
+                                            <input type="text" class="form-control pe-0 rounded-5 px-3" required
+                                                placeholder="Judul Kegiatan">
+                                        </div>
+                                    </div><!--end col-->
+
+                                    <div class="col-lg-2 col-md-8 pe-0">
+                                        <div class="row align-items-center">
+                                            <div class="d-grid">
+                                                <button class="searchbtn btn btn-primary rounded-5"> <i
+                                                        class="fea icon-sm icons text-white" data-feather="search"
+                                                        style="opacity: 100%; stroke-width: 2px;"></i></button>
+                                            </div>
+                                        </div><!--end row-->
+                                    </div> <!---end col-->
+
+                                </div><!--end row-->
+                            </form>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-5 mt-sm-0">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="sidebar p-4 rounded shadow bg-white">
+                            <!-- PIC -->
+                            <div class="widget mb-4 pb-4 border-bottom">
+                                <h5 class="widget-title">PIC</h5>
+                                <div class="mt-2 mb-0">
+                                    <input type="text" class="form-control pe-0 px-3" required placeholder="Nama PIC">
+                                </div>
+                            </div>
+                            <!-- PIC -->
+
+                            <!-- Provinsi -->
+                            <div class="widget mb-4 pb-4 border-bottom">
+                                <h5 class="widget-title">Provinsi</h5>
+                                <div class="mt-2 mb-0">
+                                    <select class="form-select form-control" aria-label="Default select example">
+                                        <option selected>Jawa Tengah</option>
+                                        <option>Jawa Barat</option>
+                                        <option>Jawa Timur</option>
+                                        <option>Sulawesi</option>
+                                        <option>Kalimantan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Provinsi -->
+
+                            <!-- Kota/Kabupaten -->
+                            <div class="widget mb-4 pb-4 border-bottom">
+                                <h5 class="widget-title">Kota/Kabupaten</h5>
+                                <div class="mt-2 mb-0">
+                                    <select class="form-select form-control" aria-label="Default select example">
+                                        <option selected>Wonogiri</option>
+                                        <option>Boyolali</option>
+                                        <option>Surakarta</option>
+                                        <option>Klaten</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Kota/Kabupaten -->
+
+                            <!-- Tanggal -->
+                            <div class="widget mb-4 pb-4 border-bottom">
+                                <h5 class="widget-title">Tanggal Awal</h5>
+                                <div class="mt-2 mb-0">
+                                    <div class="form-icon position-relative">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" class="bi bi-calendar3 fea icon-sm icons"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                            <path
+                                                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                        </svg>
+
+                                        <input name="Tanggal Awal" id="tanggal_awal" type="date"
+                                            class="form-control ps-5" placeholder="Tanggal Awal :">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tanggal -->
+
+                            <!-- Status -->
+                            <div class="widget mb-4 pb-4 border-bottom">
+                                <h5 class="widget-title">Status</h5>
+                                <div class="mt-2">
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input" checked type="radio" name="flexRadioDefault"
+                                            id="lasthour">
+                                        <label class="form-check-label" for="lasthour">Sedang Berlangsung</label>
+                                    </div>
+
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input" checked type="radio" name="flexRadioDefault"
+                                            id="oneday">
+                                        <label class="form-check-label" for="oneday">Sudah di Buka</label>
+                                    </div>
+
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input" checked type="radio" name="flexRadioDefault"
+                                            id="sevenday">
+                                        <label class="form-check-label" for="sevenday">Selesai</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Status -->
+
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-8 col-md-6 col-12">
+
+                        <div class="row align-items-center mb-3">
+                            <div class="col-lg-8 col-md-8">
+                                <div class="section-title">
+                                    <span class="text-muted me-3">Showing 1 - 15 out of 452</span>
+                                </div>
+                            </div><!--end col-->
+
+                            <div class="col-lg-4 col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <div class="form custom-form">
+                                    <select class="form-select form-control" aria-label="Default select example"
+                                        id="Sortbylist-job">
+                                        <option selected>Semua Pelatihan</option>
+                                        <option>Menunggu Diverifikasi</option>
+                                        <option>Sedang Mengikuti</option>
+                                    </select>
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+
+                        <div class="row">
+
+                            <!-- List Pelatihan -->
+                            <div class="row gap-4 p-0 m-0">
+                                <div class="col-12">
+                                    <div
+                                        class="job-box job-primary d-md-flex align-items-center border-0 shadow rounded p-3 position-relative bg-white">
+                                        
+                                        <div class="p-2">
+                                            <div class="d-flex flex-column flex-nowrap align-items-start">
+                                                <a href="https://ministry.phicos.co.id/front/wkmb/lms/pengelola/kelola-pelatihan.html" class="card-title">Pelatihan Manajemen
+                                                    Informasi Akuntabilitas Sesi I</a>
+                                                <span class="badge badge-link bg-primary px-3 py-2">Menunggu Verifikasi</span>
+                                            </div>
+                                            <ul class="list-unstyled mb-0 mt-4 d-flex flex-wrap flex-column gap-2">
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-chat-bubble-user icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">PIC: </span>
+                                                        Pusdiklat
+                                                        Pegawai Kemendikbudristek (Satker)
+                                                    </span>
+                                                </li>
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-map-marker icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Lokasi: </span>
+                                                        Kota Depok - Jawa Barat
+                                                    </span>
+                                                </li>
+
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-calendar-alt icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Waktu Pendaftaran: </span>
+                                                        2023-03-20 s.d 2023-03-25
+                                                    </span>
+                                                </li>
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-calendar-alt icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Waktu Kegiatan: </span>
+                                                        2023-03-28 s.d 2023-04-18
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="dropdown-primary me-2 mt-2 position-absolute top-0 end-0 mt-3 me-3">
+                                            <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-primary"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                    class="uil uil-ellipsis-v align-middle"></i></a>
+
+                                            <div class="dropdown-menu">
+                                                <ul
+                                                    class="list-unstyled text-muted mb-0 d-flex flex-wrap justify-content-center gap-2">
+                                                    <li class="mb-1"><a href="verifikasi-peserta.html"
+                                                            class="btn btn-icon btn-pills btn-primary mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Verifikasi Peserta"><i class="uil uil-user-check"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                    <li class="mb-1"><a href="javascript:void(0);"
+                                                            class="btn btn-icon btn-pills btn-info mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Detail Pelatihan"><i class="uil uil-file-info-alt"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                    <li class="mb-1"><a href="javascript:void(0);"
+                                                            class="btn btn-icon btn-pills btn-success mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Edit Pelatihan"><i class="uil uil-edit-alt"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                    <li class="mb-1"><a href="javascript:void(0);"
+                                                            class="btn btn-icon btn-pills btn-danger mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Hapus"><i class="uil uil-file-times"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="position-absolute top-0 end-0 mt-3 me-3">
+                                                                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft"><i class="uil uil-bookmark align-middle"></i></a>
+                                                                    </div> -->
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-12">
+                                    <div
+                                        class="job-box job-primary d-md-flex align-items-center border-0 shadow rounded p-3 position-relative bg-white">
+
+                                        <div class="p-2">
+                                            <div class="d-flex flex-column flex-nowrap align-items-start">
+                                                <a href="javascript:void(0);" class="card-title">Pelatihan Manajemen
+                                                    Informasi Akuntabilitas Sesi I</a>
+                                                <span class="badge badge-link bg-primary px-3 py-2">Menunggu Verifikasi</span>
+                                            </div>
+
+                                            <ul class="list-unstyled mb-0 mt-4 d-flex flex-wrap flex-column gap-2">
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-chat-bubble-user icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">PIC: </span>
+                                                        Pusdiklat
+                                                        Pegawai Kemendikbudristek (Satker)
+                                                    </span>
+                                                </li>
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-map-marker icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Lokasi: </span>
+                                                        Kota Depok - Jawa Barat
+                                                    </span>
+                                                </li>
+
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-calendar-alt icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Waktu Pendaftaran: </span>
+                                                        2023-03-20 s.d 2023-03-25
+                                                    </span>
+                                                </li>
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-calendar-alt icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Waktu Kegiatan: </span>
+                                                        2023-03-28 s.d 2023-04-18
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="dropdown-primary me-2 mt-2 position-absolute top-0 end-0 mt-3 me-3">
+                                            <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-primary"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                    class="uil uil-ellipsis-v align-middle"></i></a>
+
+                                            <div class="dropdown-menu">
+                                                <ul
+                                                    class="list-unstyled text-muted mb-0 d-flex flex-wrap justify-content-center gap-2">
+                                                    <li class="mb-1"><a href="verifikasi-peserta.html"
+                                                            class="btn btn-icon btn-pills btn-primary mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Verifikasi Peserta"><i class="uil uil-user-check"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                    <li class="mb-1"><a href="javascript:void(0);"
+                                                            class="btn btn-icon btn-pills btn-info mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Detail Pelatihan"><i class="uil uil-file-info-alt"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                    <li class="mb-1"><a href="javascript:void(0);"
+                                                            class="btn btn-icon btn-pills btn-success mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Edit Pelatihan"><i class="uil uil-edit-alt"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                    <li class="mb-1"><a href="javascript:void(0);"
+                                                            class="btn btn-icon btn-pills btn-danger mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Hapus"><i class="uil uil-file-times"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="position-absolute top-0 end-0 mt-3 me-3">
+                                                                                                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft"><i class="uil uil-bookmark align-middle"></i></a>
+                                                                                                    </div> -->
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-12">
+                                    <div
+                                        class="job-box job-primary d-md-flex align-items-center border-0 shadow rounded p-3 position-relative bg-white">
+
+                                        <div class="p-2">
+                                            <div class="d-flex flex-column flex-nowrap align-items-start">
+                                                <a href="javascript:void(0);" class="card-title">Pelatihan Manajemen
+                                                    Informasi Akuntabilitas Sesi I</a>
+                                                <span class="badge badge-link bg-primary px-3 py-2">Menunggu Verifikasi</span>
+                                            </div>
+                                        
+                                            <ul class="list-unstyled mb-0 mt-4 d-flex flex-wrap flex-column gap-2">
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-chat-bubble-user icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">PIC: </span>
+                                                        Pusdiklat
+                                                        Pegawai Kemendikbudristek (Satker)
+                                                    </span>
+                                                </li>
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-map-marker icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Lokasi: </span>
+                                                        Kota Depok - Jawa Barat
+                                                    </span>
+                                                </li>
+
+
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-calendar-alt icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Waktu Pendaftaran: </span>
+                                                        2023-03-20 s.d 2023-03-25
+                                                    </span>
+                                                </li>
+                                                <li class="d-lg-inline mb-0 me-lg-2"><i
+                                                        class="uil uil-calendar-alt icons"></i>
+                                                    <span>
+                                                        <span class="text-primary fw-bold">Waktu Kegiatan: </span>
+                                                        2023-03-28 s.d 2023-04-18
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="dropdown-primary me-2 mt-2 position-absolute top-0 end-0 mt-3 me-3">
+                                            <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-primary"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                    class="uil uil-ellipsis-v align-middle"></i></a>
+
+                                            <div class="dropdown-menu">
+                                                <ul
+                                                    class="list-unstyled text-muted mb-0 d-flex flex-wrap justify-content-center gap-2">
+                                                    <li class="mb-1"><a href="verifikasi-peserta.html"
+                                                            class="btn btn-icon btn-pills btn-primary mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Verifikasi Peserta"><i class="uil uil-user-check"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                    <li class="mb-1"><a href="javascript:void(0);"
+                                                            class="btn btn-icon btn-pills btn-info mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Detail Pelatihan"><i class="uil uil-file-info-alt"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                    <li class="mb-1"><a href="javascript:void(0);"
+                                                            class="btn btn-icon btn-pills btn-success mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Edit Pelatihan"><i class="uil uil-edit-alt"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                    <li class="mb-1"><a href="javascript:void(0);"
+                                                            class="btn btn-icon btn-pills btn-danger mb-2 mb-md-0"
+                                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                            title="Hapus"><i class="uil uil-file-times"
+                                                                style="font-size: 21px;"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="position-absolute top-0 end-0 mt-3 me-3">
+                                                                                                        <a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft"><i class="uil uil-bookmark align-middle"></i></a>
+                                                                                                    </div> -->
+                                    </div>
+                                </div><!--end col-->
+                            </div>
+                            <!-- / List Pelatihan -->
+
+
+                            <div class="col-12 mt-4 pt-2">
+                                <!-- PAGINATION START -->
+                                <ul class="pagination justify-content-center mb-0">
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)"
+                                            aria-label="Previous">Prev</a></li>
+                                    <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)"
+                                            aria-label="Next">Next</a></li>
+                                </ul>
+                                <!-- PAGINATION END -->
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Job List End -->
+    </main>
+
+
+    <!-- Footer Start -->
+    <footer class="footer bg-gray">
+
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-60">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                <a href="#" class="logo-footer w-100">
+                                    <img src="../../assets/images/logo-bottom.png" alt="">
+                                </a>
+                                <p class="text-white mt-5 fw-normal opacity-50">Jl. Jendral Sudirman, Senayan,
+                                    Jakarta-10270
+                                    <br>
+                                    Telp: (021) 57033030
+                                </p>
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kemendikbudristek</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Lembaga Administrasi Negara</h5>
+                                        <p class="fw-normal "><a href="" class="text-white opacity-50">www.lan.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Merdeka Belajar</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.merdekabelajar.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kementerian PAN dan RB</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.menpan.go.id</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                    </div>
+                </div><!--end row-->
+            </div>
+
+            <div class="py-4">
+                <hr>
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p>©
+                                <script>document.write(new Date().getFullYear())</script> Kemendikbudristek</a>
+                            </p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end mb-0">
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-youtube fs-4"></i>
+                                    <span>Wiyata Kinarya Merdeka Belajar</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-instagram fs-4"></i>
+                                    <span>wkmb.kemendikbudristek</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div><!--end col-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main Js -->
+    <script src="../../assets/libs/feather-icons/feather.min.js"></script>
+    <script src="../../assets/js/plugins.init.js"></script>
+    <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="../../assets/js/app.js"></script>
+    <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+</body>
+
+</html>

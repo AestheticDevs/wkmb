@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Wiyata Kinarya Merdeka Belajar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="Version" content="v4.4.0" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon"
+        href="https://ppid.kemdikbud.go.id/senayan/uploads/logo_kemdikbud_ori7575_77601df063.png" />
+
+    <!-- Css -->
+    <link href="../assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.min.css" id="bootstrap-style" class="theme-opt" rel="stylesheet"
+        type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/libs/%40iconscout/unicons/css/line.css" type="text/css" rel="stylesheet" />
+    <!-- Style Css-->
+    <link href="../assets/css/style.min.css" id="color-opt" class="theme-opt" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../assets/css/custom.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loader -->
+    <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Loader -->
+
+    <main class="position-relative bg-primary">
+        <!-- Navbar Start -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container-fluid px-5 ">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="../assets/images/wkmb-logo.png" height="48" class="logo-light-mode" alt="">
+                    <img src="../assets/images/wkmb-logo.png" height="48" class="logo-dark-mode" alt="">
+                </a>
+                <!-- Logo End -->
+
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!-- Login button Start-->
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item ps-1 mb-0">
+
+                        <a href="javascript:void(0)" class="sub-menu-item fw-bold" data-bs-toggle="modal"
+                            data-bs-target="#addContent">
+                            <button class="btn btn-primary rounded-5">Masuk</button>
+                        </a>
+
+                    </li>
+                    </li>
+                </ul>
+                <!--Login button End -->
+
+
+
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li><a href="index.html" class="sub-menu-item">Beranda</a></li>
+                        <li><a href="./pengguna/login.html" class="sub-menu-item">Pusat Pengetahuan</a></li>
+                        <li><a href="/" class="sub-menu-item">Mitra</a></li>
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Pusat Pembelajaran</a>
+                            <span class="menu-arrow text-white"></span>
+                            <ul class="submenu">
+                                <li><a href="">Pelatihan Terbaru</a></li>
+                                <li><a href="pelatihan-saya.html">Pelatihan Saya</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/" class="sub-menu-item">Registrasi</a>
+
+                        </li>
+                        <li><a href="/" class="sub-menu-item">Bantuan</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="addContent" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded shadow border-0">
+                    <div class="modal-body p-4">
+                        <div class="container-fluid px-0">
+                            <div class="row mt-4">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Masuk Sebagai</label>
+                                        <div class="form-icon position-relative mb-2">
+                                            <i data-feather="user" class="fea icon-sm icons"></i>
+
+                                            <select class="form-select form-control ps-5"
+                                                aria-label="Default select example">
+                                                <option selected>Pegawai</option>
+                                                <option value="1">Mitra WKMB</option>
+                                                <option value="1">Pengelola</option>
+                                            </select>
+                                        </div>
+                                        <span class="text-muted text-sm mt-2">Silahkan masuk menggunakan akun
+                                            DikbudHR</span>
+
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">NIP</label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="user" class="fea icon-sm icons"></i>
+                                            <input name="nip" id="nip" type="number" class="form-control ps-5"
+                                                placeholder="Masukkan NIP">
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <div class="form-icon position-relative">
+                                            <i data-feather="key" class="fea icon-sm icons"></i>
+                                            <input name="password" id="password" type="password"
+                                                class="form-control ps-5" placeholder="Masukkan Password">
+                                        </div>
+                                    </div>
+                                    <a href=""><span class="float-end fw-bold text-primary">Lupa Password ?</span>
+                                    </a>
+                                </div>
+                                <!--end col-->
+
+
+                            </div><!--end row-->
+                            <div class="row mt-5">
+                                <div class="col-sm-12">
+                                    <input type="submit" id="submit" name="send" class="btn btn-primary w-100"
+                                        value="Masuk">
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / Modal -->
+        <!-- Hero Start -->
+        <section class="bg-half-170 d-table w-100 hero">
+            <img src="../assets/images/element-light.png" class="position-absolute left-0 top-0" alt="">
+            <img src="../assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+            <div class="container ">
+                <div class="row mt-5 align-items-center">
+                    <div class="col-lg-7 col-md-7">
+                        <div class="title-heading me-lg-4 text-white">
+                            <h1 class="heading mb-3">Apa itu WKMB?</h1>
+                            <p class="para-desc text-white fs-6 fw-normal mt-4" style="line-height: 28px;">
+                                <strong>WKMB</strong>
+                                atau <strong>Wiyata
+                                    Kinarya
+                                    Merdeka
+                                    Belajar</strong>
+                                merupakan strategi
+                                pengembangan kompetensi Pegawai ASN Kemendikbudristek dengan
+                                pengintegrasian seluruh sumber daya dalam rangka meningkatkan kinerja organisasi melalui
+                                pengembangan pengetahuan,
+                                kecakapan, dan sikap setiap individu dalam ekosistem "Merdeka Belajar" untuk mewujudkan
+                                SDM
+                                unggul yang memiliki
+                                kapabilitas tinggi.
+                            </p>
+                            <div class="mt-5 d-flex gap-2 w-75">
+                                <input type="text" class="form-control rounded-5 px-4 border-0"
+                                    placeholder="Cari pelatihan">
+                                <a href=""
+                                    class="p-3 bg-accent rounded-5 d-flex align-items-center justify-content-center text-white">
+                                    <i data-feather="search" class="uil uil-icons"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-4">
+                                <div class="carousel-item active">
+                                    <a href="https://www.youtube.com/watch?v=5A-l5Vlpfe0&ab_channel=WiyataKinaryaMerdekaBelajar"
+                                        class="d-flex justify-content-center"><img
+                                            src="../assets/images/slider-1 Medium.png" class=" 
+                                            alt=" ..."></a>
+                                </div>
+                                <div class="carousel-item ">
+                                    <a href="https://www.youtube.com/watch?v=iAaAfoFZRWQ&ab_channel=WiyataKinaryaMerdekaBelajar"
+                                        class="d-flex justify-content-center"><img
+                                            src="../assets/images/slider-2 Medium.png" class=" 
+                                            alt=" ..."></a>
+
+                                </div>
+
+                                <div class="carousel-item ">
+                                    <a href="" class="d-flex justify-content-center"><img
+                                            src="https://wkmb.kemdikbud.go.id/static/flyer.jpg" class=" 
+                                            alt=" ..."></a>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+
+        <!-- Tentang -->
+        <section class="section bg-light border-bottom ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <img src="../assets/images/asset-guru.png" alt="">
+                    </div>
+                    <div class="col-6 p-4">
+                        <p class="para-desc text-primary">
+                            <strong>WKMB</strong>
+                            atau <strong>Wiyata Kinarya Merdeka Belajar</strong>
+                            merupakan strategi pengembangan kompetensi Pegawai ASN
+                            Kemendikbudristek dengan
+                            pengintegrasian seluruh sumber daya dalam rangka meningkatkan kinerja organisasi melalui
+                            pengembangan pengetahuan,
+                            kecakapan, dan sikap setiap individu dalam ekosistem "Merdeka Belajar" untuk mewujudkan SDM
+                            unggul yang memiliki
+                            kapabilitas tinggi.
+                        </p>
+                        <p class="para-desc text-primary mb-4">
+                            <strong>WKMB</strong> dikelola berdasarkan Peraturan Menteri Pendidikan,
+                            Kebudayaan, Riset, dan Teknologi Nomor
+                            34 Tahun 2023 tentang
+                            Pengembangan Kompetensi Pegawai Aparatur Sipil Negara Kementerian Pendidikan, Kebudayaan,
+                            Riset,
+                            dan Teknologi.
+                        </p>
+                        <a href="https://drive.google.com/file/d/1isiFKQaOWeWJAqZgg6yPdvKf2EJtkTJj/view?usp=sharing"
+                            class="p-3 bg-primary text-white text-sm rounded-2" style="font-size: 14px;">
+                            <i data-feather="file" class="uil uil-icons"></i>
+                            Unduh Permendikbud.pdf</a>
+                    </div>
+                </div><!--end row-->
+        </section><!--end section-->
+        <!-- Tentang -->
+
+        <!-- Visi Misi -->
+        <section class="section bg-primary">
+            <img src="../assets/images/element-light.png" class="position-absolute left-0 top-0" alt="">
+            <div class="container visi-misi">
+                <div class="card p-4 position-relative rounded-3 pt-5">
+                    <img src="../assets/images/quote.png" class="position-absolute" alt="" style="top: -20px">
+                    <h4 class="text-white">Visi</h4>
+                    <p class="m-0 text-white mt-3 fst-italic">“Menjadi pusat unggulan pembelajaran dan pengetahuan yang
+                        mendukung
+                        visi,
+                        misi, dan
+                        program strategis
+                        Kemendikbudristek.”</p>
+                </div>
+
+                <div class="card p-4 position-relative rounded-3  mt-3">
+                    <img src="../assets/images/quote.png" class="position-absolute" alt=""
+                        style="bottom: -20px; right: 20px; transform: rotate(180deg);">
+
+                    <h4 class="text-white">Misi</h4>
+
+                    <ul class="text-white ps-4 lh-lg mt-3 fst-italic" style="list-style: decimal;">
+                        <li>Membangun sistem manajemen pembelajaran dan pengetahuan yang okum siona dan
+                            berkesinambungan.</li>
+                        <li>Mendukung manajemen talenta dalam pengelolaan karir dan pencapaian kinerja organisasi.
+                        </li>
+                        <li>Mengembangkan sarana dan prasarana pembelajaran dan pengetahuan berbasis Teknologi Informasi
+                            yang
+                            aplikatif, inovatif,
+                            dan kolaboratif.</li>
+                        <li>Membangun kemitraan dengan institusi penyelenggara pendidikan dan pelatihan
+                            kementerian/lembaga
+                            negara maupun swasta di
+                            dalam dan luar negeri.</li>
+                        <li>Menyajikan solusi pembelajaran yang aplikatif dan sesuai dengan kebutuhan unit kerja.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Testi End -->
+
+        <!-- Sosialisasi -->
+        <section class="section bg-white">
+            <img src="../assets/images/element-dark.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+            <div class="container">
+                <div class="row mt-lg-4 align-items-center">
+                    <div class="col-5">
+                        <img src="../assets/images/img-sosialisasi.png" alt="">
+                    </div>
+                    <div class="col-7">
+                        <h4 class="text-primary fw-bold">Sosialisasi Pencegahan 3 Isu Kekerasan di Lingkungan Kerja</h4>
+                        <p class="para-desc text-gray">Sosialisasi ini diharapkan dapat mendukung dan
+                            mengakselerasi
+                            terwujudnya lingkungan kerja yang aman, nyaman, dan
+                            kondusif serta bebas dari perundungan, kekerasan seksual, dan intoleransi di semua unit
+                            kerja
+                            Kementerian Pendidikan,
+                            Kebudayaan, Riset, dan Teknologi.</p>
+                        <button class="btn btn-primary rounded-5"> Selengkapnya</button>
+                    </div>
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Sosialisasi -->
+
+        <!-- Proses Pembelajaran -->
+        <section class="section bg-light py-5">
+            <div class="container py-5">
+                <p class="text-gray text-center mb-2">Proses Pembelajaran dalam</p>
+                <h4 class="text-primary text-center fw-bold">WIYATA KINARYA MERDEKA BELAJAR</h4>
+
+
+                <div class="row mt-100">
+                    <div class="col-4">
+                        <div class="card h-100 shadow-md">
+                            <div class="card-body">
+                                <span
+                                    class="badge-1 position-relative rounded-lg bg-primary text-white d-flex align-items-center justify-content-center"
+                                    style="top: -45px; width: 54px;">1</span>
+                                <h5 class="card-title">Perencanaan</h5>
+                                <p class="card-text text-gray">Sebelum Anda melakukan pembelajaran, silahkan lakukan
+                                    <span class="fw-bold text-accent">Perencanaan</span>
+                                    Pengembangan Kompetensi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card h-100 shadow-md">
+                            <div class="card-body">
+                                <span
+                                    class="badge-1 position-relative rounded-lg bg-primary text-white d-flex align-items-center justify-content-center"
+                                    style="top: -45px; width: 54px;">2</span>
+                                <h5 class="card-title">Realisasikan</h5>
+                                <p class="card-text text-gray">Kemudian lakukan proses pembelajaran melalui laman
+                                    <span class="text-accent fw-bold">Pusat Pembelajaran</span>
+
+                                    atau melalui
+                                    <span class="text-accent fw-bold">Pusat Pengetahuan</span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card h-100 shadow-md">
+                            <div class="card-body ">
+                                <span
+                                    class="badge-1 position-relative rounded-lg bg-primary text-white d-flex align-items-center justify-content-center"
+                                    style="top: -45px; width: 54px;">3</span>
+                                <h5 class="card-title">Rekognisikan</h5>
+                                <p class="card-text text-gray">Lalu ajukan hasil pembelajaran Anda sebagai sebuah
+                                    capaian
+                                    yang <span class="fw-bold text-accent">Direkognisi</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section>
+        <!--Proses Pembelajaran-->
+
+        <!-- Pelatihan -->
+        <section class="section bg-primary py-5">
+            <img src="../assets/images/element-light.png" class="position-absolute left-0 top-0" alt="">
+            <div class="container py-5">
+                <h4 class="text-white fw-bold">Pelatihan Terbaru</h4>
+
+                <div class="row mt-5">
+                    <div class="col-4 mb-4">
+                        <a href="detail-pelatihan.html">
+                            <div class="card h-100 shadow-md">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN TIGA ISU KEKERASAN DI
+                                        LINGKUNGAN
+                                        KERJA - SESI
+                                        25 (22 AGUSTUS 2023)
+                                    </h5>
+
+                                    <div class="d-flex mt-4 justify-content-between align-items-center">
+                                        <span class="text-gray bg-light py-2 px-4 rounded-5">66 peserta</span>
+                                        <div class="d-flex gap-1">
+                                            <p class="text-gray fw-bold m-0">4.8</p>
+                                            <i class="mdi mdi-star text-accent"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="card h-100 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN TIGA ISU KEKERASAN DI
+                                    LINGKUNGAN
+                                    KERJA - SESI
+                                    25 (22 AGUSTUS 2023)
+                                </h5>
+
+                                <div class="d-flex mt-4 justify-content-between align-items-center">
+                                    <span class="text-gray bg-light py-2 px-4 rounded-5">66 peserta</span>
+                                    <div class="d-flex gap-1">
+                                        <p class="text-gray fw-bold m-0">4.8</p>
+                                        <i class="mdi mdi-star text-accent"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="card h-100 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN TIGA ISU KEKERASAN DI
+                                    LINGKUNGAN
+                                    KERJA - SESI
+                                    25 (22 AGUSTUS 2023)
+                                </h5>
+
+                                <div class="d-flex mt-4 justify-content-between align-items-center">
+                                    <span class="text-gray bg-light py-2 px-4 rounded-5">66 peserta</span>
+                                    <div class="d-flex gap-1">
+                                        <p class="text-gray fw-bold m-0">4.8</p>
+                                        <i class="mdi mdi-star text-accent"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="card h-100 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN TIGA ISU KEKERASAN DI
+                                    LINGKUNGAN
+                                    KERJA - SESI
+                                    25 (22 AGUSTUS 2023)
+                                </h5>
+
+                                <div class="d-flex mt-4 justify-content-between align-items-center">
+                                    <span class="text-gray bg-light py-2 px-4 rounded-5">66 peserta</span>
+                                    <div class="d-flex gap-1">
+                                        <p class="text-gray fw-bold m-0">4.8</p>
+                                        <i class="mdi mdi-star text-accent"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="card h-100 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN TIGA ISU KEKERASAN DI
+                                    LINGKUNGAN
+                                    KERJA - SESI
+                                    25 (22 AGUSTUS 2023)
+                                </h5>
+
+                                <div class="d-flex mt-4 justify-content-between align-items-center">
+                                    <span class="text-gray bg-light py-2 px-4 rounded-5">66 peserta</span>
+                                    <div class="d-flex gap-1">
+                                        <p class="text-gray fw-bold m-0">4.8</p>
+                                        <i class="mdi mdi-star text-accent"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4">
+                        <div class="card h-100 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title line-clamp-2">SOSIALISASI PENCEGAHAN TIGA ISU KEKERASAN DI
+                                    LINGKUNGAN
+                                    KERJA - SESI
+                                    25 (22 AGUSTUS 2023)
+                                </h5>
+
+                                <div class="d-flex mt-4 justify-content-between align-items-center">
+                                    <span class="text-gray bg-light py-2 px-4 rounded-5">66 peserta</span>
+                                    <div class="d-flex gap-1">
+                                        <p class="text-gray fw-bold m-0">4.8</p>
+                                        <i class="mdi mdi-star text-accent"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </section>
+
+        <img src="../assets/images/element-light.png" class="position-absolute right-0 bottom-0 rotate-180" alt="">
+
+        <!--Pelatihan-->
+        <div class="position-sticky bottom-0 z-index-1 text-end px-5 h-25">
+            <a href="#" onclick="topFunction()" id="back-to-top" class="position-relative ms-auto back-to-top"><i
+                    data-feather="arrow-up" class="fea icon-sm icons align-middle "></i></a>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer bg-gray">
+
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-py-60">
+                        <div class="row">
+                            <div class="col-lg-6 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                <a href="#" class="logo-footer w-100">
+                                    <img src="../assets/images/logo-bottom.png" alt="">
+                                </a>
+                                <p class="text-white mt-5 fw-normal opacity-50">Jl. Jendral Sudirman, Senayan,
+                                    Jakarta-10270
+                                    <br>
+                                    Telp: (021) 57033030
+                                </p>
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kemendikbudristek</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Lembaga Administrasi Negara</h5>
+                                        <p class="fw-normal "><a href="" class="text-white opacity-50">www.lan.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Merdeka Belajar</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.merdekabelajar.kemdikbud.go.id</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="text-white fw-bold">Kementerian PAN dan RB</h5>
+                                        <p class="fw-normal "><a href=""
+                                                class="text-white opacity-50">www.menpan.go.id</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+
+                    </div>
+                </div><!--end row-->
+            </div>
+
+            <div class="py-4">
+                <hr>
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p>©
+                                <script>document.write(new Date().getFullYear())</script> Kemendikbudristek</a>
+                            </p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <ul class="list-unstyled text-sm-end mb-0">
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-youtube fs-4"></i>
+                                    <span>Wiyata Kinarya Merdeka Belajar</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0)" class="text-white d-flex align-items-center gap-1">
+                                    <i class="mdi mdi-instagram fs-4"></i>
+                                    <span>wkmb.kemendikbudristek</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </div><!--end col-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+
+
+
+
+
+
+    <!-- Javascript -->
+    <!-- JAVASCRIPT -->
+    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="../assets/libs/tiny-slider/min/tiny-slider.js"></script>
+    <!-- Main Js -->
+    <script src="../assets/libs/feather-icons/feather.min.js"></script>
+    <script src="../assets/js/plugins.init.js"></script>
+    <!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+    <script src="../assets/js/app.js"></script>
+    <!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+
+</body>
+
+
+<!-- Mirrored from shreethemes.in/landrick/landing/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 Nov 2022 02:46:35 GMT -->
+
+</html>
